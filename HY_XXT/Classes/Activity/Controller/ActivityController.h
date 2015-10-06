@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ActivityController.h
 //  HY_XXT
 //
 //  Created by XXT on 15/10/6.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ActivityController : UIViewController
 
 @end
-
