@@ -7,22 +7,92 @@
 //
 
 #import "CinemaController.h"
+#import "DropDownMenuView.h"
 
-@interface CinemaController ()
-
+@interface CinemaController ()<NSXMLParserDelegate>
+@property (nonatomic ,copy)NSString *contentStr;//记录读取内容
+@property (nonatomic,strong)NSMutableDictionary *xmlDic;
+@property (nonatomic,strong)NSMutableArray *xmlArr;
+@property (nonatomic,strong)NSMutableDictionary *allDic;
+@property (nonatomic,copy)NSString *num;
 @end
 
 @implementation CinemaController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.allDic =[NSMutableDictionary dictionary];
+    NSArray *allkey =[NSArray arrayWithObjects:@"city",@"subway",@"area",nil];
+    [self quyuData:@"city"];
+    [self quyuData:@"area"];
+    [self quyuData:@"subway"];
+    DropDownMenuView *dropView =[[DropDownMenuView alloc]initWithHeight:64 DataDic:self.allDic AllKey:allkey];
+    [self.tableView addSubview:dropView];
 }
+
+-(void)quyuData:(NSString *)name{
+    NSString *filePath = [[NSBundle mainBundle]pathForResource:name ofType:@"xml"];
+    self.xmlArr =[NSMutableArray array];
+    //读取文件内容
+    NSData *parseData = [NSData dataWithContentsOfFile:filePath];
+    //创建解析对象
+    NSXMLParser *parser = [[NSXMLParser alloc]initWithData:parseData];
+    //设置代理
+    parser.delegate = self;
+    //解析
+    [parser parse];
+    
+    //进行数据处理
+    [self.allDic setValue:self.xmlArr forKey:name];
+}
+#pragma mark - SAX解析
+//读取到开始标签
+-(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
+    if ([elementName isEqualToString:@"county"]||[elementName isEqualToString:@"indexarea"]||[elementName isEqualToString:@"subway"]) {
+        self.xmlDic =[NSMutableDictionary dictionary];
+    }
+}
+//获取内容
+-(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
+    self.num= self.contentStr;
+    self.contentStr =string;
+}
+//读取到结束标签
+-(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
+
+        if ([elementName isEqualToString:@"countycode"]) {
+            [self.xmlDic setValue:self.contentStr forKey:@"countycode"];
+        }else if ([elementName isEqualToString:@"countyname"]){
+            [self.xmlDic setValue:self.contentStr forKey:@"name"];
+        }else if ([elementName isEqualToString:@"briefname"]){
+            [self.xmlDic setValue:self.contentStr forKey:@"briefname"];
+        }else if ([elementName isEqualToString:@"county"]){
+            [self.xmlArr addObject:self.xmlDic];
+        }
+    
+         else if ([elementName isEqualToString:@"indexareacode"]){
+            [self.xmlDic setValue:self.contentStr forKey:@"indexareacode"];
+        }else if ([elementName isEqualToString:@"indexareaname"]){
+            [self.xmlDic setValue:self.contentStr forKey:@"name"];
+        }else if ([elementName isEqualToString:@"indexarea"]){
+            [self.xmlArr addObject:self.xmlDic];
+        }
+    
+         else if ([elementName isEqualToString:@"subwayid"]){
+            [self.xmlDic setValue:self.contentStr forKey:@"subwayid"];
+        }else if ([elementName isEqualToString:@"subwayname"]){
+            if ([self.contentStr isEqual:@"号线"]) {
+                NSString *str =[NSString stringWithFormat:@"%@%@",self.num,self.contentStr];
+                [self.xmlDic setValue:str forKey:@"name"];
+            }else{
+                [self.xmlDic setValue:self.contentStr forKey:@"name"];
+            }
+        }else if ([elementName isEqualToString:@"subway"]){
+            [self.xmlArr addObject:self.xmlDic];
+        }
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

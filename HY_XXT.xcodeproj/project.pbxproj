@@ -47,6 +47,22 @@
 		B9E270E41BC3A58E007372FE /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270DA1BC3A58E007372FE /* AFURLResponseSerialization.m */; };
 		B9E270E51BC3A58E007372FE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270DC1BC3A58E007372FE /* AFURLSessionManager.m */; };
 		B9E270E81BC3A5B2007372FE /* AFNReuest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270E71BC3A5B2007372FE /* AFNReuest.m */; };
+		E6650E121BC5741200692A94 /* playinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E6650E041BC5741200692A94 /* playinfo.json */; };
+		E6650E131BC5741200692A94 /* area.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E051BC5741200692A94 /* area.xml */; };
+		E6650E141BC5741200692A94 /* 发现-活动.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E061BC5741200692A94 /* 发现-活动.xml */; };
+		E6650E151BC5741200692A94 /* 发现-电影.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E071BC5741200692A94 /* 发现-电影.xml */; };
+		E6650E161BC5741200692A94 /* subway.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E081BC5741200692A94 /* subway.xml */; };
+		E6650E171BC5741200692A94 /* city.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E091BC5741200692A94 /* city.xml */; };
+		E6650E181BC5741200692A94 /* 影效.json in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0A1BC5741200692A94 /* 影效.json */; };
+		E6650E191BC5741200692A94 /* 活动-活动.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0B1BC5741200692A94 /* 活动-活动.xml */; };
+		E6650E1A1BC5741200692A94 /* 活动-轮播.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0C1BC5741200692A94 /* 活动-轮播.xml */; };
+		E6650E1B1BC5741200692A94 /* 购票-即将上映.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0D1BC5741200692A94 /* 购票-即将上映.xml */; };
+		E6650E1C1BC5741200692A94 /* 购票-影院.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0E1BC5741200692A94 /* 购票-影院.xml */; };
+		E6650E1D1BC5741200692A94 /* 购票-排行.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0F1BC5741200692A94 /* 购票-排行.xml */; };
+		E6650E1E1BC5741200692A94 /* 购票-热映.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E101BC5741200692A94 /* 购票-热映.xml */; };
+		E6650E1F1BC5741200692A94 /* 音效.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E111BC5741200692A94 /* 音效.xml */; };
+		E676A0611BC582740078713F /* DropDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = E676A0601BC582740078713F /* DropDownMenuView.m */; };
+		E676A0641BC5868B0078713F /* DropButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E676A0631BC5868B0078713F /* DropButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +152,24 @@
 		B9E270DC1BC3A58E007372FE /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		B9E270E61BC3A5B2007372FE /* AFNReuest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNReuest.h; sourceTree = "<group>"; };
 		B9E270E71BC3A5B2007372FE /* AFNReuest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNReuest.m; sourceTree = "<group>"; };
+		E6650E041BC5741200692A94 /* playinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = playinfo.json; sourceTree = "<group>"; };
+		E6650E051BC5741200692A94 /* area.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = area.xml; sourceTree = "<group>"; };
+		E6650E061BC5741200692A94 /* 发现-活动.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "发现-活动.xml"; sourceTree = "<group>"; };
+		E6650E071BC5741200692A94 /* 发现-电影.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "发现-电影.xml"; sourceTree = "<group>"; };
+		E6650E081BC5741200692A94 /* subway.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = subway.xml; sourceTree = "<group>"; };
+		E6650E091BC5741200692A94 /* city.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = city.xml; sourceTree = "<group>"; };
+		E6650E0A1BC5741200692A94 /* 影效.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "影效.json"; sourceTree = "<group>"; };
+		E6650E0B1BC5741200692A94 /* 活动-活动.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "活动-活动.xml"; sourceTree = "<group>"; };
+		E6650E0C1BC5741200692A94 /* 活动-轮播.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "活动-轮播.xml"; sourceTree = "<group>"; };
+		E6650E0D1BC5741200692A94 /* 购票-即将上映.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-即将上映.xml"; sourceTree = "<group>"; };
+		E6650E0E1BC5741200692A94 /* 购票-影院.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-影院.xml"; sourceTree = "<group>"; };
+		E6650E0F1BC5741200692A94 /* 购票-排行.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-排行.xml"; sourceTree = "<group>"; };
+		E6650E101BC5741200692A94 /* 购票-热映.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-热映.xml"; sourceTree = "<group>"; };
+		E6650E111BC5741200692A94 /* 音效.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "音效.xml"; sourceTree = "<group>"; };
+		E676A05F1BC582740078713F /* DropDownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownMenuView.h; sourceTree = "<group>"; };
+		E676A0601BC582740078713F /* DropDownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownMenuView.m; sourceTree = "<group>"; };
+		E676A0621BC5868B0078713F /* DropButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropButton.h; sourceTree = "<group>"; };
+		E676A0631BC5868B0078713F /* DropButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +344,7 @@
 		B985F0951BC355BB00B1E2AF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E6650E031BC5741200692A94 /* GWL */,
 				B9753E0F1BC4B1D400FC6931 /* QXBModelTool */,
 				B9E270C71BC3A58E007372FE /* NetworkRequest  */,
 				B9E270C81BC3A58E007372FE /* ThirdFrame */,
@@ -435,6 +470,10 @@
 		B985F0A11BC355BB00B1E2AF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E676A0621BC5868B0078713F /* DropButton.h */,
+				E676A0631BC5868B0078713F /* DropButton.m */,
+				E676A05F1BC582740078713F /* DropDownMenuView.h */,
+				E676A0601BC582740078713F /* DropDownMenuView.m */,
 				B9753E251BC4C03900FC6931 /* SlideView.h */,
 				B9753E261BC4C03900FC6931 /* SlideView.m */,
 				B9753E281BC4C92000FC6931 /* SlideButton.h */,
@@ -487,6 +526,27 @@
 				B9E270DC1BC3A58E007372FE /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		E6650E031BC5741200692A94 /* GWL */ = {
+			isa = PBXGroup;
+			children = (
+				E6650E041BC5741200692A94 /* playinfo.json */,
+				E6650E051BC5741200692A94 /* area.xml */,
+				E6650E061BC5741200692A94 /* 发现-活动.xml */,
+				E6650E071BC5741200692A94 /* 发现-电影.xml */,
+				E6650E081BC5741200692A94 /* subway.xml */,
+				E6650E091BC5741200692A94 /* city.xml */,
+				E6650E0A1BC5741200692A94 /* 影效.json */,
+				E6650E0B1BC5741200692A94 /* 活动-活动.xml */,
+				E6650E0C1BC5741200692A94 /* 活动-轮播.xml */,
+				E6650E0D1BC5741200692A94 /* 购票-即将上映.xml */,
+				E6650E0E1BC5741200692A94 /* 购票-影院.xml */,
+				E6650E0F1BC5741200692A94 /* 购票-排行.xml */,
+				E6650E101BC5741200692A94 /* 购票-热映.xml */,
+				E6650E111BC5741200692A94 /* 音效.xml */,
+			);
+			path = GWL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,8 +631,22 @@
 			files = (
 				B985F0721BC355A700B1E2AF /* Main.storyboard in Resources */,
 				B985F0771BC355A700B1E2AF /* LaunchScreen.xib in Resources */,
+				E6650E1E1BC5741200692A94 /* 购票-热映.xml in Resources */,
 				B985F0741BC355A700B1E2AF /* Images.xcassets in Resources */,
+				E6650E1B1BC5741200692A94 /* 购票-即将上映.xml in Resources */,
+				E6650E121BC5741200692A94 /* playinfo.json in Resources */,
+				E6650E151BC5741200692A94 /* 发现-电影.xml in Resources */,
+				E6650E171BC5741200692A94 /* city.xml in Resources */,
+				E6650E1C1BC5741200692A94 /* 购票-影院.xml in Resources */,
+				E6650E1D1BC5741200692A94 /* 购票-排行.xml in Resources */,
+				E6650E1F1BC5741200692A94 /* 音效.xml in Resources */,
+				E6650E181BC5741200692A94 /* 影效.json in Resources */,
+				E6650E131BC5741200692A94 /* area.xml in Resources */,
 				B9753E381BC520A700FC6931 /* ShowMovieCell.xib in Resources */,
+				E6650E161BC5741200692A94 /* subway.xml in Resources */,
+				E6650E141BC5741200692A94 /* 发现-活动.xml in Resources */,
+				E6650E1A1BC5741200692A94 /* 活动-轮播.xml in Resources */,
+				E6650E191BC5741200692A94 /* 活动-活动.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +677,7 @@
 				B985F0A51BC355D500B1E2AF /* AppDelegate.m in Sources */,
 				B9753E371BC520A700FC6931 /* ShowMovieCell.m in Sources */,
 				B9D03B0A1BC3591200DCDEB8 /* HYTabBar.m in Sources */,
+				E676A0611BC582740078713F /* DropDownMenuView.m in Sources */,
 				B9753E181BC4B94C00FC6931 /* DealsData.m in Sources */,
 				B9753E271BC4C03900FC6931 /* SlideView.m in Sources */,
 				B9D03B071BC358F100DCDEB8 /* HYTabBarButton.m in Sources */,
@@ -617,6 +692,7 @@
 				B9E270E01BC3A58E007372FE /* AFNetworkReachabilityManager.m in Sources */,
 				B9E270E41BC3A58E007372FE /* AFURLResponseSerialization.m in Sources */,
 				B9E270E31BC3A58E007372FE /* AFURLRequestSerialization.m in Sources */,
+				E676A0641BC5868B0078713F /* DropButton.m in Sources */,
 				B933C99B1BC3CA5000B90787 /* CityData.m in Sources */,
 				B9753E2A1BC4C92000FC6931 /* SlideButton.m in Sources */,
 				B985F06C1BC355A700B1E2AF /* HY_XXT.xcdatamodeld in Sources */,
@@ -749,7 +825,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "/Users/lanou3g/Documents/XXT_IOS/项目/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/wangxinguo/Documents/IOS/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch;
 				INFOPLIST_FILE = HY_XXT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -761,7 +837,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "/Users/lanou3g/Documents/XXT_IOS/项目/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/wangxinguo/Documents/IOS/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch;
 				INFOPLIST_FILE = HY_XXT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
