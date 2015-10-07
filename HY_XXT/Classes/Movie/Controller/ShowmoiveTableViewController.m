@@ -1,47 +1,46 @@
 //
-//  MovieController.m
+//  ShowmoiveTableViewController.m
 //  HY_XXT
 //
-//  Created by XXT on 15/10/6.
+//  Created by XXT on 15/10/7.
 //  Copyright (c) 2015年 XXT. All rights reserved.
 //
 
-#import "MovieController.h"
+#import "ShowmoiveTableViewController.h"
+#import "AFNReuest.h"
+#import "MoviesData.h"
 
-@interface MovieController ()
+@interface ShowmoiveTableViewController ()
 
+@property (nonatomic,strong)NSMutableArray *movies;
 @end
 
-@implementation MovieController
-
--(void)viewWillAppear:(BOOL)animated{
-    self.view.alpha =0;
-    [self.view.layer removeAllAnimations];
-    [UIView animateWithDuration:0.1 animations:^{
-        self.view.transform =CGAffineTransformMakeTranslation(self.view.bounds.size.width/2, 0);
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.2 animations:^{
-            self.view.transform =CGAffineTransformMakeTranslation(0, 0);
-            self.view.alpha =1;
-        }];
-        //还原到原来的状态
-    }];
-}
-//-(void)viewDidDisappear:(BOOL)animated{
-//    [UIView animateWithDuration:0.1 animations:^{
-//        self.view.transform =CGAffineTransformMakeTranslation(-self.view.bounds.size.width/2, 0);
-//        self.view.alpha =0;
-//    }];
+@implementation ShowmoiveTableViewController
+//-(void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES];
 //
 //}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+
+    [self layoutCityData];
+}
+
+-(void)layoutCityData{
+    NSString *str =[NSString stringWithFormat:@"%@/v1/cinemas.json?ct=beijing",kMaoYanURL];
+    [AFNReuest JSONDataWithUrl:str success:^(id json) {
+        NSArray *arr =[json valueForKey:@"data"];
+        self.movies =[NSMutableArray array];
+        for (NSDictionary *dic in arr) {
+            MoviesData *data =[MoviesData new];
+            [data setValuesForKeysWithDictionary:dic];
+            [self.movies addObject:data];
+        }
+    } fail:^{
+        NSLog(@"数据请求错误");
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,26 +51,24 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 20;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     
-    // Configure the cell...
+    cell.textLabel.text =@"上映电影";
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

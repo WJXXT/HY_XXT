@@ -22,3 +22,21 @@
 #endif
 
 #define kMaoYanURL @"http://platform.mobile.meituan.com/open/maoyan"
+
+//屏幕高度
+#define kScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
+//屏幕宽
+#define kScreenWidth CGRectGetWidth([UIScreen mainScreen].bounds)
+
+//是否ios7以上系统
+
+
+
+#define kIsIOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0)
+
+//ios7以上视图中包含状态栏预留的高度
+#define kHeightInViewForStatus (kIsIOS7?20:0)
+//状态条占的高度
+#define kHeightForStatus (kIsIOS7?0:20)
+//导航栏高度
+#define kNavBarHeight (kIsIOS7?64:44)

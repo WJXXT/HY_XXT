@@ -27,10 +27,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    [self layoutCity];
+    [self layoutCityData];
      self.tableView.sectionIndexColor = [UIColor blackColor];
 }
--(void)layoutCity{
+-(void)layoutCityData{
     NSString *str =[NSString stringWithFormat:@"%@/v1/cities.json",kMaoYanURL];
     [AFNReuest JSONDataWithUrl:str success:^(id json) {
          NSArray *arr =[json valueForKey:@"data"];

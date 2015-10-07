@@ -9,7 +9,7 @@
 #import "RootViewController.h"
 #import "FinderController.h"
 #import "ActivityController.h"
-#import "MovieController.h"
+#import "MoviesViewController.h"
 #import "CalenderController.h"
 #import "HYTabBarButton.h"
 #import "HYTabBar.h"
@@ -17,7 +17,7 @@
 
 @interface RootViewController ()<HYTabBarDelegate>
 @property (nonatomic,strong)FinderController *finder;
-@property (nonatomic,strong)MovieController *movie;
+@property (nonatomic,strong)MoviesViewController *movie;
 @property (nonatomic,strong)ActivityController *activity;
 @property (nonatomic,strong)CalenderController *calender;
 @end
@@ -65,19 +65,18 @@
     [myView addButton];
     
     _finder =[[FinderController alloc]init];
-    _finder.view.backgroundColor =[UIColor whiteColor];
     [self addChildViewController:_finder];
     
-    _movie =[[MovieController alloc]init];
-    _movie.view.backgroundColor =[UIColor redColor];
-    [self addChildViewController:_movie];
+    
+    _movie =[[MoviesViewController alloc]init];
+    UINavigationController *moviena =[[UINavigationController alloc]initWithRootViewController:_movie];
+
+    [self addChildViewController:moviena];
     
     _activity =[[ActivityController alloc]init];
-    _activity.view.backgroundColor =[UIColor yellowColor];
     [self addChildViewController:_activity];
 
     _calender =[[CalenderController alloc]init];
-    _calender.view.backgroundColor =[UIColor blueColor];
     [self addChildViewController:_calender];
     
 
@@ -91,7 +90,6 @@
 
 }
 
-//-(void)ta
 
 
 - (void)didReceiveMemoryWarning {

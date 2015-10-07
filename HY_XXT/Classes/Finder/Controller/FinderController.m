@@ -29,7 +29,6 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"--");
     _citySelet = 1;
 
 }
