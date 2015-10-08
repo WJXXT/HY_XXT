@@ -7,62 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B933C9971BC3BF0500B90787 /* CityController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933C9951BC3BF0500B90787 /* CityController.m */; };
-		B933C99B1BC3CA5000B90787 /* CityData.m in Sources */ = {isa = PBXBuildFile; fileRef = B933C99A1BC3CA5000B90787 /* CityData.m */; };
-		B9753E0E1BC4B1AB00FC6931 /* MoviesData.m in Sources */ = {isa = PBXBuildFile; fileRef = B9753E0D1BC4B1AB00FC6931 /* MoviesData.m */; };
-		B9753E121BC4B1D400FC6931 /* QXBModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B9753E111BC4B1D400FC6931 /* QXBModelTool.m */; };
-		B9753E151BC4B3BE00FC6931 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9753E141BC4B3BE00FC6931 /* MoviesViewController.m */; };
-		B9753E181BC4B94C00FC6931 /* DealsData.m in Sources */ = {isa = PBXBuildFile; fileRef = B9753E171BC4B94C00FC6931 /* DealsData.m */; };
-		B9753E1B1BC4BCA900FC6931 /* ShowmoiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9753E1A1BC4BCA900FC6931 /* ShowmoiveTableViewController.m */; };
-		B9753E271BC4C03900FC6931 /* SlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9753E261BC4C03900FC6931 /* SlideView.m */; };
-		B9753E2A1BC4C92000FC6931 /* SlideButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B9753E291BC4C92000FC6931 /* SlideButton.m */; };
-		B9753E2D1BC508E400FC6931 /* WillMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9753E2C1BC508E400FC6931 /* WillMovieViewController.m */; };
-		B9753E331BC5096100FC6931 /* TopMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9753E321BC5096100FC6931 /* TopMovieViewController.m */; };
-		B9753E371BC520A700FC6931 /* ShowMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9753E351BC520A700FC6931 /* ShowMovieCell.m */; };
-		B9753E381BC520A700FC6931 /* ShowMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9753E361BC520A700FC6931 /* ShowMovieCell.xib */; };
-		B9753E3E1BC5451200FC6931 /* CinemaController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9753E3D1BC5451200FC6931 /* CinemaController.m */; };
+		B933DDAE1BC6198B00505A8C /* ActivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD321BC6198B00505A8C /* ActivityController.m */; };
+		B933DDAF1BC6198B00505A8C /* CalenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD381BC6198B00505A8C /* CalenderController.m */; };
+		B933DDB01BC6198B00505A8C /* 商圈.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD3D1BC6198B00505A8C /* 商圈.xml */; };
+		B933DDB11BC6198B00505A8C /* 城市.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD3E1BC6198B00505A8C /* 城市.xml */; };
+		B933DDB21BC6198B00505A8C /* playinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = B933DD3F1BC6198B00505A8C /* playinfo.json */; };
+		B933DDB31BC6198B00505A8C /* 地铁.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD401BC6198B00505A8C /* 地铁.xml */; };
+		B933DDB41BC6198B00505A8C /* 发现-活动.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD411BC6198B00505A8C /* 发现-活动.xml */; };
+		B933DDB51BC6198B00505A8C /* 发现-电影.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD421BC6198B00505A8C /* 发现-电影.xml */; };
+		B933DDB61BC6198B00505A8C /* 影效.json in Resources */ = {isa = PBXBuildFile; fileRef = B933DD431BC6198B00505A8C /* 影效.json */; };
+		B933DDB71BC6198B00505A8C /* 活动-活动.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD441BC6198B00505A8C /* 活动-活动.xml */; };
+		B933DDB81BC6198B00505A8C /* 活动-轮播.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD451BC6198B00505A8C /* 活动-轮播.xml */; };
+		B933DDB91BC6198B00505A8C /* 购票-即将上映.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD461BC6198B00505A8C /* 购票-即将上映.xml */; };
+		B933DDBA1BC6198B00505A8C /* 购票-影院.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD471BC6198B00505A8C /* 购票-影院.xml */; };
+		B933DDBB1BC6198B00505A8C /* 购票-排行.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD481BC6198B00505A8C /* 购票-排行.xml */; };
+		B933DDBC1BC6198B00505A8C /* 购票-热映.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD491BC6198B00505A8C /* 购票-热映.xml */; };
+		B933DDBD1BC6198B00505A8C /* 音效.xml in Resources */ = {isa = PBXBuildFile; fileRef = B933DD4A1BC6198B00505A8C /* 音效.xml */; };
+		B933DDBE1BC6198B00505A8C /* AFNReuest.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD4D1BC6198B00505A8C /* AFNReuest.m */; };
+		B933DDBF1BC6198B00505A8C /* QXBModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD501BC6198B00505A8C /* QXBModelTool.m */; };
+		B933DDC01BC6198B00505A8C /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD541BC6198B00505A8C /* AFHTTPRequestOperation.m */; };
+		B933DDC11BC6198B00505A8C /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD561BC6198B00505A8C /* AFHTTPRequestOperationManager.m */; };
+		B933DDC21BC6198B00505A8C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD581BC6198B00505A8C /* AFHTTPSessionManager.m */; };
+		B933DDC31BC6198B00505A8C /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD5B1BC6198B00505A8C /* AFNetworkReachabilityManager.m */; };
+		B933DDC41BC6198B00505A8C /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD5D1BC6198B00505A8C /* AFSecurityPolicy.m */; };
+		B933DDC51BC6198B00505A8C /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD5F1BC6198B00505A8C /* AFURLConnectionOperation.m */; };
+		B933DDC61BC6198B00505A8C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD611BC6198B00505A8C /* AFURLRequestSerialization.m */; };
+		B933DDC71BC6198B00505A8C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD631BC6198B00505A8C /* AFURLResponseSerialization.m */; };
+		B933DDC81BC6198B00505A8C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD651BC6198B00505A8C /* AFURLSessionManager.m */; };
+		B933DDC91BC6198B00505A8C /* FinderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD691BC6198B00505A8C /* FinderController.m */; };
+		B933DDCA1BC6198B00505A8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD6F1BC6198B00505A8C /* AppDelegate.m */; };
+		B933DDCB1BC6198B00505A8C /* CityController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD731BC6198B00505A8C /* CityController.m */; };
+		B933DDCC1BC6198B00505A8C /* CityData.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD761BC6198B00505A8C /* CityData.m */; };
+		B933DDCD1BC6198B00505A8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD781BC6198B00505A8C /* main.m */; };
+		B933DDCE1BC6198B00505A8C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD7C1BC6198B00505A8C /* RootViewController.m */; };
+		B933DDCF1BC6198B00505A8C /* HYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD801BC6198B00505A8C /* HYTabBar.m */; };
+		B933DDD01BC6198B00505A8C /* HYTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD821BC6198B00505A8C /* HYTabBarButton.m */; };
+		B933DDD11BC6198B00505A8C /* CinemaController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD861BC6198B00505A8C /* CinemaController.m */; };
+		B933DDD21BC6198B00505A8C /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD8A1BC6198B00505A8C /* MoviesViewController.m */; };
+		B933DDD31BC6198B00505A8C /* DealsData.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD8D1BC6198B00505A8C /* DealsData.m */; };
+		B933DDD41BC6198B00505A8C /* MoviesData.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD8F1BC6198B00505A8C /* MoviesData.m */; };
+		B933DDD51BC6198B00505A8C /* DropActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD931BC6198B00505A8C /* DropActionButton.m */; };
+		B933DDD61BC6198B00505A8C /* DropActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD951BC6198B00505A8C /* DropActionView.m */; };
+		B933DDD71BC6198B00505A8C /* DropButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD971BC6198B00505A8C /* DropButton.m */; };
+		B933DDD81BC6198B00505A8C /* DropDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD991BC6198B00505A8C /* DropDownMenuView.m */; };
+		B933DDD91BC6198B00505A8C /* SlideButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD9C1BC6198B00505A8C /* SlideButton.m */; };
+		B933DDDA1BC6198B00505A8C /* SlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DD9E1BC6198B00505A8C /* SlideView.m */; };
+		B933DDDB1BC6198B00505A8C /* ShowmoiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DDA21BC6198B00505A8C /* ShowmoiveTableViewController.m */; };
+		B933DDDC1BC6198B00505A8C /* ShowMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DDA61BC6198B00505A8C /* ShowMovieCell.m */; };
+		B933DDDD1BC6198B00505A8C /* ShowMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B933DDA71BC6198B00505A8C /* ShowMovieCell.xib */; };
+		B933DDDE1BC6198B00505A8C /* TopMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DDAA1BC6198B00505A8C /* TopMovieViewController.m */; };
+		B933DDDF1BC6198B00505A8C /* WillMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DDAD1BC6198B00505A8C /* WillMovieViewController.m */; };
 		B985F06C1BC355A700B1E2AF /* HY_XXT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B985F06A1BC355A700B1E2AF /* HY_XXT.xcdatamodeld */; };
 		B985F0721BC355A700B1E2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B985F0701BC355A700B1E2AF /* Main.storyboard */; };
 		B985F0741BC355A700B1E2AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B985F0731BC355A700B1E2AF /* Images.xcassets */; };
 		B985F0771BC355A700B1E2AF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B985F0751BC355A700B1E2AF /* LaunchScreen.xib */; };
 		B985F0831BC355A700B1E2AF /* HY_XXTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B985F0821BC355A700B1E2AF /* HY_XXTTests.m */; };
-		B985F0A51BC355D500B1E2AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B985F0A31BC355D500B1E2AF /* AppDelegate.m */; };
-		B985F0A61BC355D500B1E2AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B985F0A41BC355D500B1E2AF /* main.m */; };
-		B985F0A91BC35D2900B1E2AF /* ActivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = B985F0A81BC35D2900B1E2AF /* ActivityController.m */; };
-		B985F0AC1BC35D3B00B1E2AF /* FinderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B985F0AB1BC35D3B00B1E2AF /* FinderController.m */; };
-		B985F0BB1BC36D0A00B1E2AF /* CalenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B985F0BA1BC36D0A00B1E2AF /* CalenderController.m */; };
-		B9D03B041BC3588100DCDEB8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D03B031BC3588100DCDEB8 /* RootViewController.m */; };
-		B9D03B071BC358F100DCDEB8 /* HYTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D03B061BC358F100DCDEB8 /* HYTabBarButton.m */; };
-		B9D03B0A1BC3591200DCDEB8 /* HYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D03B091BC3591200DCDEB8 /* HYTabBar.m */; };
+		B99F18E41BC61AE100A38F5E /* DropData.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F18E31BC61AE100A38F5E /* DropData.m */; };
+		B99F18E71BC61B5900A38F5E /* DropCityData.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F18E61BC61B5900A38F5E /* DropCityData.m */; };
+		B99F18EA1BC61BA200A38F5E /* DropAreaData.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F18E91BC61BA200A38F5E /* DropAreaData.m */; };
+		B99F18ED1BC61BCA00A38F5E /* DropSubwayData.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F18EC1BC61BCA00A38F5E /* DropSubwayData.m */; };
+		B99F18F01BC69ACC00A38F5E /* ReqShowMoiveData.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F18EF1BC69ACC00A38F5E /* ReqShowMoiveData.m */; };
+		B99F18F31BC69AE400A38F5E /* ShowMoiveData.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F18F21BC69AE400A38F5E /* ShowMoiveData.m */; };
+		B99F18F71BC69E6800A38F5E /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F18F61BC69E6800A38F5E /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B99F18F91BC69EB300A38F5E /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B99F18F81BC69EB300A38F5E /* libxml2.2.dylib */; };
 		B9E270C01BC3A049007372FE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E270BF1BC3A049007372FE /* Security.framework */; };
 		B9E270C21BC3A052007372FE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E270C11BC3A052007372FE /* MobileCoreServices.framework */; };
 		B9E270C41BC3A05B007372FE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E270C31BC3A05B007372FE /* SystemConfiguration.framework */; };
-		B9E270DD1BC3A58E007372FE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270CB1BC3A58E007372FE /* AFHTTPRequestOperation.m */; };
-		B9E270DE1BC3A58E007372FE /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270CD1BC3A58E007372FE /* AFHTTPRequestOperationManager.m */; };
-		B9E270DF1BC3A58E007372FE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270CF1BC3A58E007372FE /* AFHTTPSessionManager.m */; };
-		B9E270E01BC3A58E007372FE /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270D21BC3A58E007372FE /* AFNetworkReachabilityManager.m */; };
-		B9E270E11BC3A58E007372FE /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270D41BC3A58E007372FE /* AFSecurityPolicy.m */; };
-		B9E270E21BC3A58E007372FE /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270D61BC3A58E007372FE /* AFURLConnectionOperation.m */; };
-		B9E270E31BC3A58E007372FE /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270D81BC3A58E007372FE /* AFURLRequestSerialization.m */; };
-		B9E270E41BC3A58E007372FE /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270DA1BC3A58E007372FE /* AFURLResponseSerialization.m */; };
-		B9E270E51BC3A58E007372FE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270DC1BC3A58E007372FE /* AFURLSessionManager.m */; };
-		B9E270E81BC3A5B2007372FE /* AFNReuest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E270E71BC3A5B2007372FE /* AFNReuest.m */; };
-		E6650E121BC5741200692A94 /* playinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E6650E041BC5741200692A94 /* playinfo.json */; };
-		E6650E131BC5741200692A94 /* area.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E051BC5741200692A94 /* area.xml */; };
-		E6650E141BC5741200692A94 /* 发现-活动.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E061BC5741200692A94 /* 发现-活动.xml */; };
-		E6650E151BC5741200692A94 /* 发现-电影.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E071BC5741200692A94 /* 发现-电影.xml */; };
-		E6650E161BC5741200692A94 /* subway.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E081BC5741200692A94 /* subway.xml */; };
-		E6650E171BC5741200692A94 /* city.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E091BC5741200692A94 /* city.xml */; };
-		E6650E181BC5741200692A94 /* 影效.json in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0A1BC5741200692A94 /* 影效.json */; };
-		E6650E191BC5741200692A94 /* 活动-活动.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0B1BC5741200692A94 /* 活动-活动.xml */; };
-		E6650E1A1BC5741200692A94 /* 活动-轮播.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0C1BC5741200692A94 /* 活动-轮播.xml */; };
-		E6650E1B1BC5741200692A94 /* 购票-即将上映.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0D1BC5741200692A94 /* 购票-即将上映.xml */; };
-		E6650E1C1BC5741200692A94 /* 购票-影院.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0E1BC5741200692A94 /* 购票-影院.xml */; };
-		E6650E1D1BC5741200692A94 /* 购票-排行.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E0F1BC5741200692A94 /* 购票-排行.xml */; };
-		E6650E1E1BC5741200692A94 /* 购票-热映.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E101BC5741200692A94 /* 购票-热映.xml */; };
-		E6650E1F1BC5741200692A94 /* 音效.xml in Resources */ = {isa = PBXBuildFile; fileRef = E6650E111BC5741200692A94 /* 音效.xml */; };
-		E676A0611BC582740078713F /* DropDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = E676A0601BC582740078713F /* DropDownMenuView.m */; };
-		E676A0641BC5868B0078713F /* DropButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E676A0631BC5868B0078713F /* DropButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,33 +86,91 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B933C9941BC3BF0500B90787 /* CityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityController.h; sourceTree = "<group>"; };
-		B933C9951BC3BF0500B90787 /* CityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityController.m; sourceTree = "<group>"; };
-		B933C9991BC3CA5000B90787 /* CityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityData.h; sourceTree = "<group>"; };
-		B933C99A1BC3CA5000B90787 /* CityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityData.m; sourceTree = "<group>"; };
-		B9753E0C1BC4B1AB00FC6931 /* MoviesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesData.h; sourceTree = "<group>"; };
-		B9753E0D1BC4B1AB00FC6931 /* MoviesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesData.m; sourceTree = "<group>"; };
-		B9753E101BC4B1D400FC6931 /* QXBModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXBModelTool.h; sourceTree = "<group>"; };
-		B9753E111BC4B1D400FC6931 /* QXBModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXBModelTool.m; sourceTree = "<group>"; };
-		B9753E131BC4B3BE00FC6931 /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
-		B9753E141BC4B3BE00FC6931 /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
-		B9753E161BC4B94C00FC6931 /* DealsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealsData.h; sourceTree = "<group>"; };
-		B9753E171BC4B94C00FC6931 /* DealsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealsData.m; sourceTree = "<group>"; };
-		B9753E191BC4BCA900FC6931 /* ShowmoiveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowmoiveTableViewController.h; sourceTree = "<group>"; };
-		B9753E1A1BC4BCA900FC6931 /* ShowmoiveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowmoiveTableViewController.m; sourceTree = "<group>"; };
-		B9753E251BC4C03900FC6931 /* SlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideView.h; sourceTree = "<group>"; };
-		B9753E261BC4C03900FC6931 /* SlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideView.m; sourceTree = "<group>"; };
-		B9753E281BC4C92000FC6931 /* SlideButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideButton.h; sourceTree = "<group>"; };
-		B9753E291BC4C92000FC6931 /* SlideButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideButton.m; sourceTree = "<group>"; };
-		B9753E2B1BC508E400FC6931 /* WillMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WillMovieViewController.h; sourceTree = "<group>"; };
-		B9753E2C1BC508E400FC6931 /* WillMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WillMovieViewController.m; sourceTree = "<group>"; };
-		B9753E311BC5096100FC6931 /* TopMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMovieViewController.h; sourceTree = "<group>"; };
-		B9753E321BC5096100FC6931 /* TopMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMovieViewController.m; sourceTree = "<group>"; };
-		B9753E341BC520A700FC6931 /* ShowMovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMovieCell.h; sourceTree = "<group>"; };
-		B9753E351BC520A700FC6931 /* ShowMovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMovieCell.m; sourceTree = "<group>"; };
-		B9753E361BC520A700FC6931 /* ShowMovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowMovieCell.xib; sourceTree = "<group>"; };
-		B9753E3C1BC5451200FC6931 /* CinemaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinemaController.h; sourceTree = "<group>"; };
-		B9753E3D1BC5451200FC6931 /* CinemaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinemaController.m; sourceTree = "<group>"; };
+		B933DD311BC6198B00505A8C /* ActivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityController.h; sourceTree = "<group>"; };
+		B933DD321BC6198B00505A8C /* ActivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityController.m; sourceTree = "<group>"; };
+		B933DD371BC6198B00505A8C /* CalenderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderController.h; sourceTree = "<group>"; };
+		B933DD381BC6198B00505A8C /* CalenderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderController.m; sourceTree = "<group>"; };
+		B933DD3D1BC6198B00505A8C /* 商圈.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "商圈.xml"; sourceTree = "<group>"; };
+		B933DD3E1BC6198B00505A8C /* 城市.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "城市.xml"; sourceTree = "<group>"; };
+		B933DD3F1BC6198B00505A8C /* playinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = playinfo.json; sourceTree = "<group>"; };
+		B933DD401BC6198B00505A8C /* 地铁.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "地铁.xml"; sourceTree = "<group>"; };
+		B933DD411BC6198B00505A8C /* 发现-活动.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "发现-活动.xml"; sourceTree = "<group>"; };
+		B933DD421BC6198B00505A8C /* 发现-电影.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "发现-电影.xml"; sourceTree = "<group>"; };
+		B933DD431BC6198B00505A8C /* 影效.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "影效.json"; sourceTree = "<group>"; };
+		B933DD441BC6198B00505A8C /* 活动-活动.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "活动-活动.xml"; sourceTree = "<group>"; };
+		B933DD451BC6198B00505A8C /* 活动-轮播.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "活动-轮播.xml"; sourceTree = "<group>"; };
+		B933DD461BC6198B00505A8C /* 购票-即将上映.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-即将上映.xml"; sourceTree = "<group>"; };
+		B933DD471BC6198B00505A8C /* 购票-影院.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-影院.xml"; sourceTree = "<group>"; };
+		B933DD481BC6198B00505A8C /* 购票-排行.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-排行.xml"; sourceTree = "<group>"; };
+		B933DD491BC6198B00505A8C /* 购票-热映.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-热映.xml"; sourceTree = "<group>"; };
+		B933DD4A1BC6198B00505A8C /* 音效.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "音效.xml"; sourceTree = "<group>"; };
+		B933DD4C1BC6198B00505A8C /* AFNReuest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNReuest.h; sourceTree = "<group>"; };
+		B933DD4D1BC6198B00505A8C /* AFNReuest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNReuest.m; sourceTree = "<group>"; };
+		B933DD4F1BC6198B00505A8C /* QXBModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXBModelTool.h; sourceTree = "<group>"; };
+		B933DD501BC6198B00505A8C /* QXBModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXBModelTool.m; sourceTree = "<group>"; };
+		B933DD531BC6198B00505A8C /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		B933DD541BC6198B00505A8C /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		B933DD551BC6198B00505A8C /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		B933DD561BC6198B00505A8C /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		B933DD571BC6198B00505A8C /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		B933DD581BC6198B00505A8C /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		B933DD591BC6198B00505A8C /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		B933DD5A1BC6198B00505A8C /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		B933DD5B1BC6198B00505A8C /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		B933DD5C1BC6198B00505A8C /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		B933DD5D1BC6198B00505A8C /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		B933DD5E1BC6198B00505A8C /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		B933DD5F1BC6198B00505A8C /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		B933DD601BC6198B00505A8C /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		B933DD611BC6198B00505A8C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		B933DD621BC6198B00505A8C /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		B933DD631BC6198B00505A8C /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		B933DD641BC6198B00505A8C /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		B933DD651BC6198B00505A8C /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		B933DD681BC6198B00505A8C /* FinderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinderController.h; sourceTree = "<group>"; };
+		B933DD691BC6198B00505A8C /* FinderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinderController.m; sourceTree = "<group>"; };
+		B933DD6E1BC6198B00505A8C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B933DD6F1BC6198B00505A8C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B933DD721BC6198B00505A8C /* CityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityController.h; sourceTree = "<group>"; };
+		B933DD731BC6198B00505A8C /* CityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityController.m; sourceTree = "<group>"; };
+		B933DD751BC6198B00505A8C /* CityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityData.h; sourceTree = "<group>"; };
+		B933DD761BC6198B00505A8C /* CityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityData.m; sourceTree = "<group>"; };
+		B933DD781BC6198B00505A8C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B933DD7B1BC6198B00505A8C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B933DD7C1BC6198B00505A8C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B933DD7F1BC6198B00505A8C /* HYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabBar.h; sourceTree = "<group>"; };
+		B933DD801BC6198B00505A8C /* HYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBar.m; sourceTree = "<group>"; };
+		B933DD811BC6198B00505A8C /* HYTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabBarButton.h; sourceTree = "<group>"; };
+		B933DD821BC6198B00505A8C /* HYTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBarButton.m; sourceTree = "<group>"; };
+		B933DD851BC6198B00505A8C /* CinemaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinemaController.h; sourceTree = "<group>"; };
+		B933DD861BC6198B00505A8C /* CinemaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinemaController.m; sourceTree = "<group>"; };
+		B933DD891BC6198B00505A8C /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		B933DD8A1BC6198B00505A8C /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		B933DD8C1BC6198B00505A8C /* DealsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealsData.h; sourceTree = "<group>"; };
+		B933DD8D1BC6198B00505A8C /* DealsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealsData.m; sourceTree = "<group>"; };
+		B933DD8E1BC6198B00505A8C /* MoviesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesData.h; sourceTree = "<group>"; };
+		B933DD8F1BC6198B00505A8C /* MoviesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesData.m; sourceTree = "<group>"; };
+		B933DD921BC6198B00505A8C /* DropActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropActionButton.h; sourceTree = "<group>"; };
+		B933DD931BC6198B00505A8C /* DropActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropActionButton.m; sourceTree = "<group>"; };
+		B933DD941BC6198B00505A8C /* DropActionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropActionView.h; sourceTree = "<group>"; };
+		B933DD951BC6198B00505A8C /* DropActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropActionView.m; sourceTree = "<group>"; };
+		B933DD961BC6198B00505A8C /* DropButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropButton.h; sourceTree = "<group>"; };
+		B933DD971BC6198B00505A8C /* DropButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropButton.m; sourceTree = "<group>"; };
+		B933DD981BC6198B00505A8C /* DropDownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownMenuView.h; sourceTree = "<group>"; };
+		B933DD991BC6198B00505A8C /* DropDownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownMenuView.m; sourceTree = "<group>"; };
+		B933DD9B1BC6198B00505A8C /* SlideButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideButton.h; sourceTree = "<group>"; };
+		B933DD9C1BC6198B00505A8C /* SlideButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideButton.m; sourceTree = "<group>"; };
+		B933DD9D1BC6198B00505A8C /* SlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideView.h; sourceTree = "<group>"; };
+		B933DD9E1BC6198B00505A8C /* SlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideView.m; sourceTree = "<group>"; };
+		B933DDA11BC6198B00505A8C /* ShowmoiveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowmoiveTableViewController.h; sourceTree = "<group>"; };
+		B933DDA21BC6198B00505A8C /* ShowmoiveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowmoiveTableViewController.m; sourceTree = "<group>"; };
+		B933DDA51BC6198B00505A8C /* ShowMovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMovieCell.h; sourceTree = "<group>"; };
+		B933DDA61BC6198B00505A8C /* ShowMovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMovieCell.m; sourceTree = "<group>"; };
+		B933DDA71BC6198B00505A8C /* ShowMovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowMovieCell.xib; sourceTree = "<group>"; };
+		B933DDA91BC6198B00505A8C /* TopMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMovieViewController.h; sourceTree = "<group>"; };
+		B933DDAA1BC6198B00505A8C /* TopMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMovieViewController.m; sourceTree = "<group>"; };
+		B933DDAC1BC6198B00505A8C /* WillMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WillMovieViewController.h; sourceTree = "<group>"; };
+		B933DDAD1BC6198B00505A8C /* WillMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WillMovieViewController.m; sourceTree = "<group>"; };
 		B985F0601BC355A700B1E2AF /* HY_XXT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HY_XXT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B985F0641BC355A700B1E2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B985F06B1BC355A700B1E2AF /* HY_XXT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HY_XXT.xcdatamodel; sourceTree = "<group>"; };
@@ -112,64 +180,25 @@
 		B985F07C1BC355A700B1E2AF /* HY_XXTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HY_XXTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B985F0811BC355A700B1E2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B985F0821BC355A700B1E2AF /* HY_XXTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HY_XXTTests.m; sourceTree = "<group>"; };
-		B985F0A21BC355D500B1E2AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B985F0A31BC355D500B1E2AF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B985F0A41BC355D500B1E2AF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B985F0A71BC35D2900B1E2AF /* ActivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityController.h; sourceTree = "<group>"; };
-		B985F0A81BC35D2900B1E2AF /* ActivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityController.m; sourceTree = "<group>"; };
-		B985F0AA1BC35D3B00B1E2AF /* FinderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinderController.h; sourceTree = "<group>"; };
-		B985F0AB1BC35D3B00B1E2AF /* FinderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinderController.m; sourceTree = "<group>"; };
-		B985F0B91BC36D0A00B1E2AF /* CalenderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderController.h; sourceTree = "<group>"; };
-		B985F0BA1BC36D0A00B1E2AF /* CalenderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderController.m; sourceTree = "<group>"; };
-		B9D03B021BC3588100DCDEB8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		B9D03B031BC3588100DCDEB8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		B9D03B051BC358F100DCDEB8 /* HYTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabBarButton.h; sourceTree = "<group>"; };
-		B9D03B061BC358F100DCDEB8 /* HYTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBarButton.m; sourceTree = "<group>"; };
-		B9D03B081BC3591200DCDEB8 /* HYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabBar.h; sourceTree = "<group>"; };
-		B9D03B091BC3591200DCDEB8 /* HYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBar.m; sourceTree = "<group>"; };
+		B99F18E11BC61A2300A38F5E /* HYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HYPrefixHeader.pch; path = Classes/HYPrefixHeader.pch; sourceTree = "<group>"; };
+		B99F18E21BC61AE100A38F5E /* DropData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropData.h; sourceTree = "<group>"; };
+		B99F18E31BC61AE100A38F5E /* DropData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropData.m; sourceTree = "<group>"; };
+		B99F18E51BC61B5900A38F5E /* DropCityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropCityData.h; sourceTree = "<group>"; };
+		B99F18E61BC61B5900A38F5E /* DropCityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropCityData.m; sourceTree = "<group>"; };
+		B99F18E81BC61BA200A38F5E /* DropAreaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropAreaData.h; sourceTree = "<group>"; };
+		B99F18E91BC61BA200A38F5E /* DropAreaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropAreaData.m; sourceTree = "<group>"; };
+		B99F18EB1BC61BCA00A38F5E /* DropSubwayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropSubwayData.h; sourceTree = "<group>"; };
+		B99F18EC1BC61BCA00A38F5E /* DropSubwayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropSubwayData.m; sourceTree = "<group>"; };
+		B99F18EE1BC69ACC00A38F5E /* ReqShowMoiveData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReqShowMoiveData.h; sourceTree = "<group>"; };
+		B99F18EF1BC69ACC00A38F5E /* ReqShowMoiveData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReqShowMoiveData.m; sourceTree = "<group>"; };
+		B99F18F11BC69AE400A38F5E /* ShowMoiveData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMoiveData.h; sourceTree = "<group>"; };
+		B99F18F21BC69AE400A38F5E /* ShowMoiveData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMoiveData.m; sourceTree = "<group>"; };
+		B99F18F51BC69E6800A38F5E /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		B99F18F61BC69E6800A38F5E /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		B99F18F81BC69EB300A38F5E /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		B9E270BF1BC3A049007372FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B9E270C11BC3A052007372FE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B9E270C31BC3A05B007372FE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		B9E270C61BC3A2E0007372FE /* HYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HYPrefixHeader.pch; path = Classes/HYPrefixHeader.pch; sourceTree = "<group>"; };
-		B9E270CA1BC3A58E007372FE /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		B9E270CB1BC3A58E007372FE /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		B9E270CC1BC3A58E007372FE /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
-		B9E270CD1BC3A58E007372FE /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
-		B9E270CE1BC3A58E007372FE /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		B9E270CF1BC3A58E007372FE /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		B9E270D01BC3A58E007372FE /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		B9E270D11BC3A58E007372FE /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		B9E270D21BC3A58E007372FE /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		B9E270D31BC3A58E007372FE /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		B9E270D41BC3A58E007372FE /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		B9E270D51BC3A58E007372FE /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		B9E270D61BC3A58E007372FE /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		B9E270D71BC3A58E007372FE /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		B9E270D81BC3A58E007372FE /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		B9E270D91BC3A58E007372FE /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		B9E270DA1BC3A58E007372FE /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		B9E270DB1BC3A58E007372FE /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		B9E270DC1BC3A58E007372FE /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		B9E270E61BC3A5B2007372FE /* AFNReuest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNReuest.h; sourceTree = "<group>"; };
-		B9E270E71BC3A5B2007372FE /* AFNReuest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNReuest.m; sourceTree = "<group>"; };
-		E6650E041BC5741200692A94 /* playinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = playinfo.json; sourceTree = "<group>"; };
-		E6650E051BC5741200692A94 /* area.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = area.xml; sourceTree = "<group>"; };
-		E6650E061BC5741200692A94 /* 发现-活动.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "发现-活动.xml"; sourceTree = "<group>"; };
-		E6650E071BC5741200692A94 /* 发现-电影.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "发现-电影.xml"; sourceTree = "<group>"; };
-		E6650E081BC5741200692A94 /* subway.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = subway.xml; sourceTree = "<group>"; };
-		E6650E091BC5741200692A94 /* city.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = city.xml; sourceTree = "<group>"; };
-		E6650E0A1BC5741200692A94 /* 影效.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "影效.json"; sourceTree = "<group>"; };
-		E6650E0B1BC5741200692A94 /* 活动-活动.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "活动-活动.xml"; sourceTree = "<group>"; };
-		E6650E0C1BC5741200692A94 /* 活动-轮播.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "活动-轮播.xml"; sourceTree = "<group>"; };
-		E6650E0D1BC5741200692A94 /* 购票-即将上映.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-即将上映.xml"; sourceTree = "<group>"; };
-		E6650E0E1BC5741200692A94 /* 购票-影院.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-影院.xml"; sourceTree = "<group>"; };
-		E6650E0F1BC5741200692A94 /* 购票-排行.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-排行.xml"; sourceTree = "<group>"; };
-		E6650E101BC5741200692A94 /* 购票-热映.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "购票-热映.xml"; sourceTree = "<group>"; };
-		E6650E111BC5741200692A94 /* 音效.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "音效.xml"; sourceTree = "<group>"; };
-		E676A05F1BC582740078713F /* DropDownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownMenuView.h; sourceTree = "<group>"; };
-		E676A0601BC582740078713F /* DropDownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownMenuView.m; sourceTree = "<group>"; };
-		E676A0621BC5868B0078713F /* DropButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropButton.h; sourceTree = "<group>"; };
-		E676A0631BC5868B0078713F /* DropButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99F18F91BC69EB300A38F5E /* libxml2.2.dylib in Frameworks */,
 				B9E270C41BC3A05B007372FE /* SystemConfiguration.framework in Frameworks */,
 				B9E270C21BC3A052007372FE /* MobileCoreServices.framework in Frameworks */,
 				B9E270C01BC3A049007372FE /* Security.framework in Frameworks */,
@@ -193,18 +223,443 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B9753E0F1BC4B1D400FC6931 /* QXBModelTool */ = {
+		B933DD2E1BC6198B00505A8C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B9753E101BC4B1D400FC6931 /* QXBModelTool.h */,
-				B9753E111BC4B1D400FC6931 /* QXBModelTool.m */,
+				B933DD2F1BC6198B00505A8C /* Activity */,
+				B933DD351BC6198B00505A8C /* Calendar */,
+				B933DD3B1BC6198B00505A8C /* Common */,
+				B933DD661BC6198B00505A8C /* Finder */,
+				B933DD6D1BC6198B00505A8C /* Main */,
+				B933DD831BC6198B00505A8C /* Movie */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B933DD2F1BC6198B00505A8C /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD301BC6198B00505A8C /* Controller */,
+				B933DD331BC6198B00505A8C /* Model */,
+				B933DD341BC6198B00505A8C /* View */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		B933DD301BC6198B00505A8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD311BC6198B00505A8C /* ActivityController.h */,
+				B933DD321BC6198B00505A8C /* ActivityController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B933DD331BC6198B00505A8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B933DD341BC6198B00505A8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B933DD351BC6198B00505A8C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD361BC6198B00505A8C /* Controller */,
+				B933DD391BC6198B00505A8C /* Model */,
+				B933DD3A1BC6198B00505A8C /* View */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		B933DD361BC6198B00505A8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD371BC6198B00505A8C /* CalenderController.h */,
+				B933DD381BC6198B00505A8C /* CalenderController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B933DD391BC6198B00505A8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B933DD3A1BC6198B00505A8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B933DD3B1BC6198B00505A8C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD3C1BC6198B00505A8C /* GWL */,
+				B933DD4B1BC6198B00505A8C /* NetworkRequest  */,
+				B933DD4E1BC6198B00505A8C /* QXBModelTool */,
+				B933DD511BC6198B00505A8C /* ThirdFrame */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B933DD3C1BC6198B00505A8C /* GWL */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD3D1BC6198B00505A8C /* 商圈.xml */,
+				B933DD3E1BC6198B00505A8C /* 城市.xml */,
+				B933DD3F1BC6198B00505A8C /* playinfo.json */,
+				B933DD401BC6198B00505A8C /* 地铁.xml */,
+				B933DD411BC6198B00505A8C /* 发现-活动.xml */,
+				B933DD421BC6198B00505A8C /* 发现-电影.xml */,
+				B933DD431BC6198B00505A8C /* 影效.json */,
+				B933DD441BC6198B00505A8C /* 活动-活动.xml */,
+				B933DD451BC6198B00505A8C /* 活动-轮播.xml */,
+				B933DD461BC6198B00505A8C /* 购票-即将上映.xml */,
+				B933DD471BC6198B00505A8C /* 购票-影院.xml */,
+				B933DD481BC6198B00505A8C /* 购票-排行.xml */,
+				B933DD491BC6198B00505A8C /* 购票-热映.xml */,
+				B933DD4A1BC6198B00505A8C /* 音效.xml */,
+			);
+			path = GWL;
+			sourceTree = "<group>";
+		};
+		B933DD4B1BC6198B00505A8C /* NetworkRequest  */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD4C1BC6198B00505A8C /* AFNReuest.h */,
+				B933DD4D1BC6198B00505A8C /* AFNReuest.m */,
+			);
+			path = "NetworkRequest ";
+			sourceTree = "<group>";
+		};
+		B933DD4E1BC6198B00505A8C /* QXBModelTool */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD4F1BC6198B00505A8C /* QXBModelTool.h */,
+				B933DD501BC6198B00505A8C /* QXBModelTool.m */,
 			);
 			path = QXBModelTool;
+			sourceTree = "<group>";
+		};
+		B933DD511BC6198B00505A8C /* ThirdFrame */ = {
+			isa = PBXGroup;
+			children = (
+				B99F18F41BC69E6800A38F5E /* GDataXMLNode */,
+				B933DD521BC6198B00505A8C /* AFNetworking */,
+			);
+			path = ThirdFrame;
+			sourceTree = "<group>";
+		};
+		B933DD521BC6198B00505A8C /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD531BC6198B00505A8C /* AFHTTPRequestOperation.h */,
+				B933DD541BC6198B00505A8C /* AFHTTPRequestOperation.m */,
+				B933DD551BC6198B00505A8C /* AFHTTPRequestOperationManager.h */,
+				B933DD561BC6198B00505A8C /* AFHTTPRequestOperationManager.m */,
+				B933DD571BC6198B00505A8C /* AFHTTPSessionManager.h */,
+				B933DD581BC6198B00505A8C /* AFHTTPSessionManager.m */,
+				B933DD591BC6198B00505A8C /* AFNetworking.h */,
+				B933DD5A1BC6198B00505A8C /* AFNetworkReachabilityManager.h */,
+				B933DD5B1BC6198B00505A8C /* AFNetworkReachabilityManager.m */,
+				B933DD5C1BC6198B00505A8C /* AFSecurityPolicy.h */,
+				B933DD5D1BC6198B00505A8C /* AFSecurityPolicy.m */,
+				B933DD5E1BC6198B00505A8C /* AFURLConnectionOperation.h */,
+				B933DD5F1BC6198B00505A8C /* AFURLConnectionOperation.m */,
+				B933DD601BC6198B00505A8C /* AFURLRequestSerialization.h */,
+				B933DD611BC6198B00505A8C /* AFURLRequestSerialization.m */,
+				B933DD621BC6198B00505A8C /* AFURLResponseSerialization.h */,
+				B933DD631BC6198B00505A8C /* AFURLResponseSerialization.m */,
+				B933DD641BC6198B00505A8C /* AFURLSessionManager.h */,
+				B933DD651BC6198B00505A8C /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		B933DD661BC6198B00505A8C /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD671BC6198B00505A8C /* Controller */,
+				B933DD6A1BC6198B00505A8C /* Model */,
+				B933DD6B1BC6198B00505A8C /* View */,
+			);
+			path = Finder;
+			sourceTree = "<group>";
+		};
+		B933DD671BC6198B00505A8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD681BC6198B00505A8C /* FinderController.h */,
+				B933DD691BC6198B00505A8C /* FinderController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B933DD6A1BC6198B00505A8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B933DD6B1BC6198B00505A8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B933DD6D1BC6198B00505A8C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD6E1BC6198B00505A8C /* AppDelegate.h */,
+				B933DD6F1BC6198B00505A8C /* AppDelegate.m */,
+				B933DD701BC6198B00505A8C /* City */,
+				B933DD781BC6198B00505A8C /* main.m */,
+				B933DD791BC6198B00505A8C /* Root */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B933DD701BC6198B00505A8C /* City */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD711BC6198B00505A8C /* Controller */,
+				B933DD741BC6198B00505A8C /* Model */,
+				B933DD771BC6198B00505A8C /* View */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		B933DD711BC6198B00505A8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD721BC6198B00505A8C /* CityController.h */,
+				B933DD731BC6198B00505A8C /* CityController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B933DD741BC6198B00505A8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD751BC6198B00505A8C /* CityData.h */,
+				B933DD761BC6198B00505A8C /* CityData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B933DD771BC6198B00505A8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B933DD791BC6198B00505A8C /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD7A1BC6198B00505A8C /* Controller */,
+				B933DD7D1BC6198B00505A8C /* Model */,
+				B933DD7E1BC6198B00505A8C /* View */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		B933DD7A1BC6198B00505A8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD7B1BC6198B00505A8C /* RootViewController.h */,
+				B933DD7C1BC6198B00505A8C /* RootViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B933DD7D1BC6198B00505A8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B933DD7E1BC6198B00505A8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD7F1BC6198B00505A8C /* HYTabBar.h */,
+				B933DD801BC6198B00505A8C /* HYTabBar.m */,
+				B933DD811BC6198B00505A8C /* HYTabBarButton.h */,
+				B933DD821BC6198B00505A8C /* HYTabBarButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B933DD831BC6198B00505A8C /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD841BC6198B00505A8C /* Cinema */,
+				B933DD871BC6198B00505A8C /* MainMovie */,
+				B933DD9F1BC6198B00505A8C /* ShowMovie */,
+				B933DDA81BC6198B00505A8C /* TopMovie */,
+				B933DDAB1BC6198B00505A8C /* WillMovie */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		B933DD841BC6198B00505A8C /* Cinema */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD851BC6198B00505A8C /* CinemaController.h */,
+				B933DD861BC6198B00505A8C /* CinemaController.m */,
+			);
+			path = Cinema;
+			sourceTree = "<group>";
+		};
+		B933DD871BC6198B00505A8C /* MainMovie */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD881BC6198B00505A8C /* Controller */,
+				B933DD8B1BC6198B00505A8C /* Model */,
+				B933DD901BC6198B00505A8C /* View */,
+			);
+			path = MainMovie;
+			sourceTree = "<group>";
+		};
+		B933DD881BC6198B00505A8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD891BC6198B00505A8C /* MoviesViewController.h */,
+				B933DD8A1BC6198B00505A8C /* MoviesViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B933DD8B1BC6198B00505A8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD8C1BC6198B00505A8C /* DealsData.h */,
+				B933DD8D1BC6198B00505A8C /* DealsData.m */,
+				B933DD8E1BC6198B00505A8C /* MoviesData.h */,
+				B933DD8F1BC6198B00505A8C /* MoviesData.m */,
+				B99F18E21BC61AE100A38F5E /* DropData.h */,
+				B99F18E31BC61AE100A38F5E /* DropData.m */,
+				B99F18E51BC61B5900A38F5E /* DropCityData.h */,
+				B99F18E61BC61B5900A38F5E /* DropCityData.m */,
+				B99F18EB1BC61BCA00A38F5E /* DropSubwayData.h */,
+				B99F18EC1BC61BCA00A38F5E /* DropSubwayData.m */,
+				B99F18E81BC61BA200A38F5E /* DropAreaData.h */,
+				B99F18E91BC61BA200A38F5E /* DropAreaData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B933DD901BC6198B00505A8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD911BC6198B00505A8C /* DropMenu */,
+				B933DD9A1BC6198B00505A8C /* SlideView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B933DD911BC6198B00505A8C /* DropMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD921BC6198B00505A8C /* DropActionButton.h */,
+				B933DD931BC6198B00505A8C /* DropActionButton.m */,
+				B933DD941BC6198B00505A8C /* DropActionView.h */,
+				B933DD951BC6198B00505A8C /* DropActionView.m */,
+				B933DD961BC6198B00505A8C /* DropButton.h */,
+				B933DD971BC6198B00505A8C /* DropButton.m */,
+				B933DD981BC6198B00505A8C /* DropDownMenuView.h */,
+				B933DD991BC6198B00505A8C /* DropDownMenuView.m */,
+			);
+			path = DropMenu;
+			sourceTree = "<group>";
+		};
+		B933DD9A1BC6198B00505A8C /* SlideView */ = {
+			isa = PBXGroup;
+			children = (
+				B933DD9B1BC6198B00505A8C /* SlideButton.h */,
+				B933DD9C1BC6198B00505A8C /* SlideButton.m */,
+				B933DD9D1BC6198B00505A8C /* SlideView.h */,
+				B933DD9E1BC6198B00505A8C /* SlideView.m */,
+			);
+			path = SlideView;
+			sourceTree = "<group>";
+		};
+		B933DD9F1BC6198B00505A8C /* ShowMovie */ = {
+			isa = PBXGroup;
+			children = (
+				B933DDA01BC6198B00505A8C /* Controller */,
+				B933DDA31BC6198B00505A8C /* Model */,
+				B933DDA41BC6198B00505A8C /* View */,
+			);
+			path = ShowMovie;
+			sourceTree = "<group>";
+		};
+		B933DDA01BC6198B00505A8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B933DDA11BC6198B00505A8C /* ShowmoiveTableViewController.h */,
+				B933DDA21BC6198B00505A8C /* ShowmoiveTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B933DDA31BC6198B00505A8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B99F18EE1BC69ACC00A38F5E /* ReqShowMoiveData.h */,
+				B99F18EF1BC69ACC00A38F5E /* ReqShowMoiveData.m */,
+				B99F18F11BC69AE400A38F5E /* ShowMoiveData.h */,
+				B99F18F21BC69AE400A38F5E /* ShowMoiveData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B933DDA41BC6198B00505A8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B933DDA51BC6198B00505A8C /* ShowMovieCell.h */,
+				B933DDA61BC6198B00505A8C /* ShowMovieCell.m */,
+				B933DDA71BC6198B00505A8C /* ShowMovieCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B933DDA81BC6198B00505A8C /* TopMovie */ = {
+			isa = PBXGroup;
+			children = (
+				B933DDA91BC6198B00505A8C /* TopMovieViewController.h */,
+				B933DDAA1BC6198B00505A8C /* TopMovieViewController.m */,
+			);
+			path = TopMovie;
+			sourceTree = "<group>";
+		};
+		B933DDAB1BC6198B00505A8C /* WillMovie */ = {
+			isa = PBXGroup;
+			children = (
+				B933DDAC1BC6198B00505A8C /* WillMovieViewController.h */,
+				B933DDAD1BC6198B00505A8C /* WillMovieViewController.m */,
+			);
+			path = WillMovie;
 			sourceTree = "<group>";
 		};
 		B985F0571BC355A700B1E2AF = {
 			isa = PBXGroup;
 			children = (
+				B99F18F81BC69EB300A38F5E /* libxml2.2.dylib */,
 				B9E270C31BC3A05B007372FE /* SystemConfiguration.framework */,
 				B9E270C11BC3A052007372FE /* MobileCoreServices.framework */,
 				B9E270BF1BC3A049007372FE /* Security.framework */,
@@ -226,8 +681,8 @@
 		B985F0621BC355A700B1E2AF /* HY_XXT */ = {
 			isa = PBXGroup;
 			children = (
-				B985F08C1BC355BB00B1E2AF /* Classes */,
-				B9E270C61BC3A2E0007372FE /* HYPrefixHeader.pch */,
+				B933DD2E1BC6198B00505A8C /* Classes */,
+				B99F18E11BC61A2300A38F5E /* HYPrefixHeader.pch */,
 				B985F0701BC355A700B1E2AF /* Main.storyboard */,
 				B985F0731BC355A700B1E2AF /* Images.xcassets */,
 				B985F0751BC355A700B1E2AF /* LaunchScreen.xib */,
@@ -262,291 +717,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B985F08C1BC355BB00B1E2AF /* Classes */ = {
+		B99F18F41BC69E6800A38F5E /* GDataXMLNode */ = {
 			isa = PBXGroup;
 			children = (
-				B985F09A1BC355BB00B1E2AF /* Main */,
-				B985F0961BC355BB00B1E2AF /* Finder */,
-				B985F09E1BC355BB00B1E2AF /* Movie */,
-				B985F08D1BC355BB00B1E2AF /* Activity */,
-				B985F0911BC355BB00B1E2AF /* Calendar */,
-				B985F0951BC355BB00B1E2AF /* Common */,
+				B99F18F51BC69E6800A38F5E /* GDataXMLNode.h */,
+				B99F18F61BC69E6800A38F5E /* GDataXMLNode.m */,
 			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		B985F08D1BC355BB00B1E2AF /* Activity */ = {
-			isa = PBXGroup;
-			children = (
-				B985F08E1BC355BB00B1E2AF /* Controller */,
-				B985F08F1BC355BB00B1E2AF /* Model */,
-				B985F0901BC355BB00B1E2AF /* View */,
-			);
-			path = Activity;
-			sourceTree = "<group>";
-		};
-		B985F08E1BC355BB00B1E2AF /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B985F0A71BC35D2900B1E2AF /* ActivityController.h */,
-				B985F0A81BC35D2900B1E2AF /* ActivityController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B985F08F1BC355BB00B1E2AF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B985F0901BC355BB00B1E2AF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B985F0911BC355BB00B1E2AF /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				B985F0921BC355BB00B1E2AF /* Controller */,
-				B985F0931BC355BB00B1E2AF /* Model */,
-				B985F0941BC355BB00B1E2AF /* View */,
-			);
-			path = Calendar;
-			sourceTree = "<group>";
-		};
-		B985F0921BC355BB00B1E2AF /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B985F0B91BC36D0A00B1E2AF /* CalenderController.h */,
-				B985F0BA1BC36D0A00B1E2AF /* CalenderController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B985F0931BC355BB00B1E2AF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B985F0941BC355BB00B1E2AF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B985F0951BC355BB00B1E2AF /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				E6650E031BC5741200692A94 /* GWL */,
-				B9753E0F1BC4B1D400FC6931 /* QXBModelTool */,
-				B9E270C71BC3A58E007372FE /* NetworkRequest  */,
-				B9E270C81BC3A58E007372FE /* ThirdFrame */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		B985F0961BC355BB00B1E2AF /* Finder */ = {
-			isa = PBXGroup;
-			children = (
-				B985F0971BC355BB00B1E2AF /* Controller */,
-				B985F0981BC355BB00B1E2AF /* Model */,
-				B985F0991BC355BB00B1E2AF /* View */,
-			);
-			path = Finder;
-			sourceTree = "<group>";
-		};
-		B985F0971BC355BB00B1E2AF /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B985F0AA1BC35D3B00B1E2AF /* FinderController.h */,
-				B985F0AB1BC35D3B00B1E2AF /* FinderController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B985F0981BC355BB00B1E2AF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B985F0991BC355BB00B1E2AF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B985F09A1BC355BB00B1E2AF /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				B985F0A21BC355D500B1E2AF /* AppDelegate.h */,
-				B985F0A31BC355D500B1E2AF /* AppDelegate.m */,
-				B985F0A41BC355D500B1E2AF /* main.m */,
-				B985F09B1BC355BB00B1E2AF /* Controller */,
-				B985F09C1BC355BB00B1E2AF /* Model */,
-				B985F09D1BC355BB00B1E2AF /* View */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		B985F09B1BC355BB00B1E2AF /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B9D03B021BC3588100DCDEB8 /* RootViewController.h */,
-				B9D03B031BC3588100DCDEB8 /* RootViewController.m */,
-				B933C9941BC3BF0500B90787 /* CityController.h */,
-				B933C9951BC3BF0500B90787 /* CityController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B985F09C1BC355BB00B1E2AF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B933C9991BC3CA5000B90787 /* CityData.h */,
-				B933C99A1BC3CA5000B90787 /* CityData.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B985F09D1BC355BB00B1E2AF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B9D03B051BC358F100DCDEB8 /* HYTabBarButton.h */,
-				B9D03B061BC358F100DCDEB8 /* HYTabBarButton.m */,
-				B9D03B081BC3591200DCDEB8 /* HYTabBar.h */,
-				B9D03B091BC3591200DCDEB8 /* HYTabBar.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B985F09E1BC355BB00B1E2AF /* Movie */ = {
-			isa = PBXGroup;
-			children = (
-				B985F09F1BC355BB00B1E2AF /* Controller */,
-				B985F0A01BC355BB00B1E2AF /* Model */,
-				B985F0A11BC355BB00B1E2AF /* View */,
-			);
-			path = Movie;
-			sourceTree = "<group>";
-		};
-		B985F09F1BC355BB00B1E2AF /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B9753E131BC4B3BE00FC6931 /* MoviesViewController.h */,
-				B9753E141BC4B3BE00FC6931 /* MoviesViewController.m */,
-				B9753E191BC4BCA900FC6931 /* ShowmoiveTableViewController.h */,
-				B9753E1A1BC4BCA900FC6931 /* ShowmoiveTableViewController.m */,
-				B9753E2B1BC508E400FC6931 /* WillMovieViewController.h */,
-				B9753E2C1BC508E400FC6931 /* WillMovieViewController.m */,
-				B9753E311BC5096100FC6931 /* TopMovieViewController.h */,
-				B9753E321BC5096100FC6931 /* TopMovieViewController.m */,
-				B9753E3C1BC5451200FC6931 /* CinemaController.h */,
-				B9753E3D1BC5451200FC6931 /* CinemaController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B985F0A01BC355BB00B1E2AF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B9753E0C1BC4B1AB00FC6931 /* MoviesData.h */,
-				B9753E0D1BC4B1AB00FC6931 /* MoviesData.m */,
-				B9753E161BC4B94C00FC6931 /* DealsData.h */,
-				B9753E171BC4B94C00FC6931 /* DealsData.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B985F0A11BC355BB00B1E2AF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E676A0621BC5868B0078713F /* DropButton.h */,
-				E676A0631BC5868B0078713F /* DropButton.m */,
-				E676A05F1BC582740078713F /* DropDownMenuView.h */,
-				E676A0601BC582740078713F /* DropDownMenuView.m */,
-				B9753E251BC4C03900FC6931 /* SlideView.h */,
-				B9753E261BC4C03900FC6931 /* SlideView.m */,
-				B9753E281BC4C92000FC6931 /* SlideButton.h */,
-				B9753E291BC4C92000FC6931 /* SlideButton.m */,
-				B9753E341BC520A700FC6931 /* ShowMovieCell.h */,
-				B9753E351BC520A700FC6931 /* ShowMovieCell.m */,
-				B9753E361BC520A700FC6931 /* ShowMovieCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B9E270C71BC3A58E007372FE /* NetworkRequest  */ = {
-			isa = PBXGroup;
-			children = (
-				B9E270E61BC3A5B2007372FE /* AFNReuest.h */,
-				B9E270E71BC3A5B2007372FE /* AFNReuest.m */,
-			);
-			path = "NetworkRequest ";
-			sourceTree = "<group>";
-		};
-		B9E270C81BC3A58E007372FE /* ThirdFrame */ = {
-			isa = PBXGroup;
-			children = (
-				B9E270C91BC3A58E007372FE /* AFNetworking */,
-			);
-			path = ThirdFrame;
-			sourceTree = "<group>";
-		};
-		B9E270C91BC3A58E007372FE /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				B9E270CA1BC3A58E007372FE /* AFHTTPRequestOperation.h */,
-				B9E270CB1BC3A58E007372FE /* AFHTTPRequestOperation.m */,
-				B9E270CC1BC3A58E007372FE /* AFHTTPRequestOperationManager.h */,
-				B9E270CD1BC3A58E007372FE /* AFHTTPRequestOperationManager.m */,
-				B9E270CE1BC3A58E007372FE /* AFHTTPSessionManager.h */,
-				B9E270CF1BC3A58E007372FE /* AFHTTPSessionManager.m */,
-				B9E270D01BC3A58E007372FE /* AFNetworking.h */,
-				B9E270D11BC3A58E007372FE /* AFNetworkReachabilityManager.h */,
-				B9E270D21BC3A58E007372FE /* AFNetworkReachabilityManager.m */,
-				B9E270D31BC3A58E007372FE /* AFSecurityPolicy.h */,
-				B9E270D41BC3A58E007372FE /* AFSecurityPolicy.m */,
-				B9E270D51BC3A58E007372FE /* AFURLConnectionOperation.h */,
-				B9E270D61BC3A58E007372FE /* AFURLConnectionOperation.m */,
-				B9E270D71BC3A58E007372FE /* AFURLRequestSerialization.h */,
-				B9E270D81BC3A58E007372FE /* AFURLRequestSerialization.m */,
-				B9E270D91BC3A58E007372FE /* AFURLResponseSerialization.h */,
-				B9E270DA1BC3A58E007372FE /* AFURLResponseSerialization.m */,
-				B9E270DB1BC3A58E007372FE /* AFURLSessionManager.h */,
-				B9E270DC1BC3A58E007372FE /* AFURLSessionManager.m */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		E6650E031BC5741200692A94 /* GWL */ = {
-			isa = PBXGroup;
-			children = (
-				E6650E041BC5741200692A94 /* playinfo.json */,
-				E6650E051BC5741200692A94 /* area.xml */,
-				E6650E061BC5741200692A94 /* 发现-活动.xml */,
-				E6650E071BC5741200692A94 /* 发现-电影.xml */,
-				E6650E081BC5741200692A94 /* subway.xml */,
-				E6650E091BC5741200692A94 /* city.xml */,
-				E6650E0A1BC5741200692A94 /* 影效.json */,
-				E6650E0B1BC5741200692A94 /* 活动-活动.xml */,
-				E6650E0C1BC5741200692A94 /* 活动-轮播.xml */,
-				E6650E0D1BC5741200692A94 /* 购票-即将上映.xml */,
-				E6650E0E1BC5741200692A94 /* 购票-影院.xml */,
-				E6650E0F1BC5741200692A94 /* 购票-排行.xml */,
-				E6650E101BC5741200692A94 /* 购票-热映.xml */,
-				E6650E111BC5741200692A94 /* 音效.xml */,
-			);
-			path = GWL;
+			path = GDataXMLNode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -629,24 +806,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B933DDB01BC6198B00505A8C /* 商圈.xml in Resources */,
+				B933DDB41BC6198B00505A8C /* 发现-活动.xml in Resources */,
+				B933DDB51BC6198B00505A8C /* 发现-电影.xml in Resources */,
+				B933DDB11BC6198B00505A8C /* 城市.xml in Resources */,
+				B933DDBB1BC6198B00505A8C /* 购票-排行.xml in Resources */,
+				B933DDB61BC6198B00505A8C /* 影效.json in Resources */,
+				B933DDBA1BC6198B00505A8C /* 购票-影院.xml in Resources */,
+				B933DDDD1BC6198B00505A8C /* ShowMovieCell.xib in Resources */,
+				B933DDBC1BC6198B00505A8C /* 购票-热映.xml in Resources */,
 				B985F0721BC355A700B1E2AF /* Main.storyboard in Resources */,
 				B985F0771BC355A700B1E2AF /* LaunchScreen.xib in Resources */,
-				E6650E1E1BC5741200692A94 /* 购票-热映.xml in Resources */,
+				B933DDB31BC6198B00505A8C /* 地铁.xml in Resources */,
 				B985F0741BC355A700B1E2AF /* Images.xcassets in Resources */,
-				E6650E1B1BC5741200692A94 /* 购票-即将上映.xml in Resources */,
-				E6650E121BC5741200692A94 /* playinfo.json in Resources */,
-				E6650E151BC5741200692A94 /* 发现-电影.xml in Resources */,
-				E6650E171BC5741200692A94 /* city.xml in Resources */,
-				E6650E1C1BC5741200692A94 /* 购票-影院.xml in Resources */,
-				E6650E1D1BC5741200692A94 /* 购票-排行.xml in Resources */,
-				E6650E1F1BC5741200692A94 /* 音效.xml in Resources */,
-				E6650E181BC5741200692A94 /* 影效.json in Resources */,
-				E6650E131BC5741200692A94 /* area.xml in Resources */,
-				B9753E381BC520A700FC6931 /* ShowMovieCell.xib in Resources */,
-				E6650E161BC5741200692A94 /* subway.xml in Resources */,
-				E6650E141BC5741200692A94 /* 发现-活动.xml in Resources */,
-				E6650E1A1BC5741200692A94 /* 活动-轮播.xml in Resources */,
-				E6650E191BC5741200692A94 /* 活动-活动.xml in Resources */,
+				B933DDB21BC6198B00505A8C /* playinfo.json in Resources */,
+				B933DDB71BC6198B00505A8C /* 活动-活动.xml in Resources */,
+				B933DDB81BC6198B00505A8C /* 活动-轮播.xml in Resources */,
+				B933DDBD1BC6198B00505A8C /* 音效.xml in Resources */,
+				B933DDB91BC6198B00505A8C /* 购票-即将上映.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,40 +841,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9753E2D1BC508E400FC6931 /* WillMovieViewController.m in Sources */,
-				B985F0A61BC355D500B1E2AF /* main.m in Sources */,
-				B985F0AC1BC35D3B00B1E2AF /* FinderController.m in Sources */,
-				B9E270E21BC3A58E007372FE /* AFURLConnectionOperation.m in Sources */,
-				B9753E121BC4B1D400FC6931 /* QXBModelTool.m in Sources */,
-				B9E270E81BC3A5B2007372FE /* AFNReuest.m in Sources */,
-				B9753E1B1BC4BCA900FC6931 /* ShowmoiveTableViewController.m in Sources */,
-				B9E270E11BC3A58E007372FE /* AFSecurityPolicy.m in Sources */,
-				B9E270DF1BC3A58E007372FE /* AFHTTPSessionManager.m in Sources */,
-				B9753E151BC4B3BE00FC6931 /* MoviesViewController.m in Sources */,
-				B985F0A51BC355D500B1E2AF /* AppDelegate.m in Sources */,
-				B9753E371BC520A700FC6931 /* ShowMovieCell.m in Sources */,
-				B9D03B0A1BC3591200DCDEB8 /* HYTabBar.m in Sources */,
-				E676A0611BC582740078713F /* DropDownMenuView.m in Sources */,
-				B9753E181BC4B94C00FC6931 /* DealsData.m in Sources */,
-				B9753E271BC4C03900FC6931 /* SlideView.m in Sources */,
-				B9D03B071BC358F100DCDEB8 /* HYTabBarButton.m in Sources */,
-				B9753E0E1BC4B1AB00FC6931 /* MoviesData.m in Sources */,
-				B985F0BB1BC36D0A00B1E2AF /* CalenderController.m in Sources */,
-				B985F0A91BC35D2900B1E2AF /* ActivityController.m in Sources */,
-				B9E270DE1BC3A58E007372FE /* AFHTTPRequestOperationManager.m in Sources */,
-				B9E270DD1BC3A58E007372FE /* AFHTTPRequestOperation.m in Sources */,
-				B9E270E51BC3A58E007372FE /* AFURLSessionManager.m in Sources */,
-				B9753E331BC5096100FC6931 /* TopMovieViewController.m in Sources */,
-				B9D03B041BC3588100DCDEB8 /* RootViewController.m in Sources */,
-				B9E270E01BC3A58E007372FE /* AFNetworkReachabilityManager.m in Sources */,
-				B9E270E41BC3A58E007372FE /* AFURLResponseSerialization.m in Sources */,
-				B9E270E31BC3A58E007372FE /* AFURLRequestSerialization.m in Sources */,
-				E676A0641BC5868B0078713F /* DropButton.m in Sources */,
-				B933C99B1BC3CA5000B90787 /* CityData.m in Sources */,
-				B9753E2A1BC4C92000FC6931 /* SlideButton.m in Sources */,
+				B933DDC51BC6198B00505A8C /* AFURLConnectionOperation.m in Sources */,
+				B99F18F01BC69ACC00A38F5E /* ReqShowMoiveData.m in Sources */,
+				B933DDC01BC6198B00505A8C /* AFHTTPRequestOperation.m in Sources */,
+				B933DDD01BC6198B00505A8C /* HYTabBarButton.m in Sources */,
+				B933DDDF1BC6198B00505A8C /* WillMovieViewController.m in Sources */,
+				B99F18F71BC69E6800A38F5E /* GDataXMLNode.m in Sources */,
+				B933DDDC1BC6198B00505A8C /* ShowMovieCell.m in Sources */,
+				B99F18EA1BC61BA200A38F5E /* DropAreaData.m in Sources */,
+				B933DDD21BC6198B00505A8C /* MoviesViewController.m in Sources */,
+				B933DDC31BC6198B00505A8C /* AFNetworkReachabilityManager.m in Sources */,
+				B933DDC81BC6198B00505A8C /* AFURLSessionManager.m in Sources */,
+				B99F18E41BC61AE100A38F5E /* DropData.m in Sources */,
+				B933DDD41BC6198B00505A8C /* MoviesData.m in Sources */,
+				B933DDCA1BC6198B00505A8C /* AppDelegate.m in Sources */,
+				B933DDCF1BC6198B00505A8C /* HYTabBar.m in Sources */,
+				B933DDC61BC6198B00505A8C /* AFURLRequestSerialization.m in Sources */,
+				B933DDAE1BC6198B00505A8C /* ActivityController.m in Sources */,
+				B933DDD31BC6198B00505A8C /* DealsData.m in Sources */,
+				B99F18E71BC61B5900A38F5E /* DropCityData.m in Sources */,
+				B933DDC71BC6198B00505A8C /* AFURLResponseSerialization.m in Sources */,
+				B933DDCD1BC6198B00505A8C /* main.m in Sources */,
+				B933DDBF1BC6198B00505A8C /* QXBModelTool.m in Sources */,
 				B985F06C1BC355A700B1E2AF /* HY_XXT.xcdatamodeld in Sources */,
-				B9753E3E1BC5451200FC6931 /* CinemaController.m in Sources */,
-				B933C9971BC3BF0500B90787 /* CityController.m in Sources */,
+				B99F18ED1BC61BCA00A38F5E /* DropSubwayData.m in Sources */,
+				B99F18F31BC69AE400A38F5E /* ShowMoiveData.m in Sources */,
+				B933DDCC1BC6198B00505A8C /* CityData.m in Sources */,
+				B933DDCB1BC6198B00505A8C /* CityController.m in Sources */,
+				B933DDDA1BC6198B00505A8C /* SlideView.m in Sources */,
+				B933DDD51BC6198B00505A8C /* DropActionButton.m in Sources */,
+				B933DDDE1BC6198B00505A8C /* TopMovieViewController.m in Sources */,
+				B933DDD11BC6198B00505A8C /* CinemaController.m in Sources */,
+				B933DDD71BC6198B00505A8C /* DropButton.m in Sources */,
+				B933DDC11BC6198B00505A8C /* AFHTTPRequestOperationManager.m in Sources */,
+				B933DDD81BC6198B00505A8C /* DropDownMenuView.m in Sources */,
+				B933DDD61BC6198B00505A8C /* DropActionView.m in Sources */,
+				B933DDCE1BC6198B00505A8C /* RootViewController.m in Sources */,
+				B933DDC41BC6198B00505A8C /* AFSecurityPolicy.m in Sources */,
+				B933DDD91BC6198B00505A8C /* SlideButton.m in Sources */,
+				B933DDDB1BC6198B00505A8C /* ShowmoiveTableViewController.m in Sources */,
+				B933DDAF1BC6198B00505A8C /* CalenderController.m in Sources */,
+				B933DDBE1BC6198B00505A8C /* AFNReuest.m in Sources */,
+				B933DDC91BC6198B00505A8C /* FinderController.m in Sources */,
+				B933DDC21BC6198B00505A8C /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,10 +1011,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/wangxinguo/Documents/IOS/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/lanou3g/Documents/XXT_IOS/项目/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk//usr/include/libxml2",
+					/Applications/Xcode6.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = HY_XXT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -837,10 +1029,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/wangxinguo/Documents/IOS/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/lanou3g/Documents/XXT_IOS/项目/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk//usr/include/libxml2",
+					/Applications/Xcode6.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = HY_XXT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

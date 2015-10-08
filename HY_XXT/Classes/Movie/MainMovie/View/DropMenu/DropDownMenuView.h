@@ -10,6 +10,5 @@
 
 @interface DropDownMenuView : UIView
 -(id)initWithHeight:(CGFloat)height
-            DataDic:(NSDictionary *)dataDic
-             AllKey:(NSArray *)allkey;
+             AllFileKey:(NSArray *)allFilekey;
 @end

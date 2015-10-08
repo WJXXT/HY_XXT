@@ -18,6 +18,7 @@
         [self setTitle:title forState:UIControlStateNormal];
         [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [self setTitleColor:[UIColor orangeColor] forState:UIControlStateSelected];
+        [self setTintColor:[UIColor redColor]];
         self.titleLabel.font =[UIFont boldSystemFontOfSize:15];
         self.titleLabel.textAlignment= 1;
     }

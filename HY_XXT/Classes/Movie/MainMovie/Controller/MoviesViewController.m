@@ -12,14 +12,18 @@
 #import "TopMovieViewController.h"
 #import "CinemaController.h"
 #import "SlideView.h"
-
-@interface MoviesViewController ()<UIScrollViewDelegate,SlideViewDelegate>
+#import "DropActionView.h"
+#import "DropDownMenuView.h"
+@interface MoviesViewController ()<UIScrollViewDelegate,SlideViewDelegate,NSXMLParserDelegate>
 @property (nonatomic,strong)UIScrollView *scrollView;
 @property (nonatomic,strong)SlideView *slideview;
+@property (nonatomic,strong)DropActionView *dropButton;
 @property (nonatomic,strong)ShowmoiveTableViewController *showmoiveController;
 @property (nonatomic,strong)WillMovieViewController *willmoiveController;
 @property (nonatomic,strong)TopMovieViewController *topmoiveController;
 @property (nonatomic,strong)CinemaController *cinemaController;
+
+
 @end
 
 @implementation MoviesViewController
@@ -42,7 +46,21 @@
 
     [self layoutNavigationItem];
     [self layoutCinema];
+    [self layoutDropDownMenu];
     [self layoutScrollView];
+
+
+
+}
+
+-(void)layoutDropDownMenu{
+    NSArray *dropTitle =[NSArray arrayWithObjects:@"区域",@"特色",@"排序",nil];
+
+    NSArray *allFilekey =[NSArray arrayWithObjects:@"城市",@"地铁",@"商圈",nil];
+    NSDictionary *dic =[NSDictionary dictionaryWithObjectsAndKeys:allFilekey,@"区域", nil];
+    self.dropButton =[[DropActionView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 44) NameArr:dropTitle FileDic:dic];
+    [self.view addSubview:self.dropButton];
+
 }
 
 -(void)layoutNavigationItem{
@@ -124,27 +142,42 @@
     }];
 }
 
+
+
+
+
 #pragma mark -segment事件处理
 -(void)segmentAction:(UISegmentedControl *)segment{
     NSInteger scrollindex = [[self.view subviews]indexOfObject:self.scrollView];
     NSInteger cinemaindex = [[self.view subviews]indexOfObject:self.cinemaController.view];
+    
+    NSInteger slideindex = [[self.view subviews]indexOfObject:self.slideview];
+    NSInteger dropindex = [[self.view subviews]indexOfObject:self.dropButton];
+    
     if (segment.selectedSegmentIndex ==0) {
         self.navigationItem.leftBarButtonItem.customView.hidden =YES;
         self.navigationItem.rightBarButtonItem.customView.hidden =YES;
-        [UIView animateWithDuration:0.3 animations:^{
+        [UIView animateWithDuration:0.4 animations:^{
             self.cinemaController.tableView.alpha =0;
             self.scrollView.alpha = 1;
-
+            
+            self.dropButton.alpha =0;
+            self.slideview.alpha = 1;
         }];
         [self.view exchangeSubviewAtIndex:scrollindex withSubviewAtIndex:cinemaindex];
+        [self.view exchangeSubviewAtIndex:slideindex withSubviewAtIndex:dropindex];
     }else if(segment.selectedSegmentIndex ==1){
         self.navigationItem.leftBarButtonItem.customView.hidden =NO;
         self.navigationItem.rightBarButtonItem.customView.hidden =NO;
-        [UIView animateWithDuration:0.3 animations:^{
+        [UIView animateWithDuration:0.4 animations:^{
             self.scrollView.alpha = 0;
             self.cinemaController.tableView.alpha =1;
+            
+            self.dropButton.alpha =1;
+            self.slideview.alpha = 0;
         }];
         [self.view exchangeSubviewAtIndex:scrollindex withSubviewAtIndex:cinemaindex];
+        [self.view exchangeSubviewAtIndex:dropindex withSubviewAtIndex:slideindex];
     }
     
 }

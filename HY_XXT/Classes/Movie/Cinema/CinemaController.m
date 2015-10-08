@@ -1,46 +1,29 @@
 //
-//  ShowmoiveTableViewController.m
+//  CinemaController.m
 //  HY_XXT
 //
 //  Created by XXT on 15/10/7.
 //  Copyright (c) 2015年 XXT. All rights reserved.
 //
 
-#import "ShowmoiveTableViewController.h"
-#import "AFNReuest.h"
-#import "MoviesData.h"
+#import "CinemaController.h"
 
-@interface ShowmoiveTableViewController ()
 
-@property (nonatomic,strong)NSMutableArray *movies;
+@interface CinemaController ()
+
 @end
 
-@implementation ShowmoiveTableViewController
-//-(void)viewWillAppear:(BOOL)animated{
-//    [super viewWillAppear:animated];
-//    [self.navigationController setNavigationBarHidden:YES];
-//
-//}
+@implementation CinemaController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tongzhi:) name:@"Cinemanot" object:nil];
 
-
-    [self layoutCityData];
 }
+//接收通知
+- (void)tongzhi:(NSNotification *)text{
 
--(void)layoutCityData{
-    NSString *str =[NSString stringWithFormat:@"%@/v1/cinemas.json?ct=beijing",kMaoYanURL];
-    [AFNReuest JSONDataWithUrl:str success:^(id json) {
-        NSArray *arr =[json valueForKey:@"data"];
-        self.movies =[NSMutableArray array];
-        for (NSDictionary *dic in arr) {
-            MoviesData *data =[MoviesData new];
-            [data setValuesForKeysWithDictionary:dic];
-            [self.movies addObject:data];
-        }
-    } fail:^{
-        NSLog(@"数据请求错误");
-    }];
+    NSLog(@"%@",text.userInfo[@"CinemaStyle"]);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,24 +34,24 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
     // Return the number of rows in the section.
     return 20;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     
-    cell.textLabel.text =@"上映电影";
+    cell.textLabel.text =@"影院";
     
     return cell;
 }
-
 
 /*
 // Override to support conditional editing of the table view.
