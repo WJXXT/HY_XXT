@@ -1,18 +1,18 @@
 //
-//  WillMovieViewController.m
+//  TopMovieViewController.m
 //  HY_XXT
 //
 //  Created by XXT on 15/10/7.
 //  Copyright (c) 2015年 XXT. All rights reserved.
 //
 
-#import "WillMovieViewController.h"
+#import "TopMovieViewController.h"
 
-@interface WillMovieViewController ()
+@interface TopMovieViewController ()
 
 @end
 
-@implementation WillMovieViewController
+@implementation TopMovieViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,11 +41,10 @@
     return 20;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     
-    cell.textLabel.text =@"即将上映";
+    cell.textLabel.text =@"暂无数据";
     
     return cell;
 }

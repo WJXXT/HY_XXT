@@ -54,8 +54,6 @@
 		B933DDDB1BC6198B00505A8C /* ShowmoiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DDA21BC6198B00505A8C /* ShowmoiveTableViewController.m */; };
 		B933DDDC1BC6198B00505A8C /* ShowMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DDA61BC6198B00505A8C /* ShowMovieCell.m */; };
 		B933DDDD1BC6198B00505A8C /* ShowMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B933DDA71BC6198B00505A8C /* ShowMovieCell.xib */; };
-		B933DDDE1BC6198B00505A8C /* TopMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DDAA1BC6198B00505A8C /* TopMovieViewController.m */; };
-		B933DDDF1BC6198B00505A8C /* WillMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B933DDAD1BC6198B00505A8C /* WillMovieViewController.m */; };
 		B985F06C1BC355A700B1E2AF /* HY_XXT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B985F06A1BC355A700B1E2AF /* HY_XXT.xcdatamodeld */; };
 		B985F0721BC355A700B1E2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B985F0701BC355A700B1E2AF /* Main.storyboard */; };
 		B985F0741BC355A700B1E2AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B985F0731BC355A700B1E2AF /* Images.xcassets */; };
@@ -96,6 +94,11 @@
 		B9E270C01BC3A049007372FE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E270BF1BC3A049007372FE /* Security.framework */; };
 		B9E270C21BC3A052007372FE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E270C11BC3A052007372FE /* MobileCoreServices.framework */; };
 		B9E270C41BC3A05B007372FE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E270C31BC3A05B007372FE /* SystemConfiguration.framework */; };
+		E674EC161BC81A4D008EB392 /* ChartImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E674EC151BC81A4D008EB392 /* ChartImageView.m */; };
+		E674EC311BC82CC8008EB392 /* TopMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E674EC281BC82CC8008EB392 /* TopMovieViewController.m */; };
+		E674EC321BC82CC8008EB392 /* WillMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E674EC2E1BC82CC8008EB392 /* WillMovieViewController.m */; };
+		E674EC371BC82E37008EB392 /* ReqWillMovieData.m in Sources */ = {isa = PBXBuildFile; fileRef = E674EC341BC82E37008EB392 /* ReqWillMovieData.m */; };
+		E674EC381BC82E37008EB392 /* WillMovieData.m in Sources */ = {isa = PBXBuildFile; fileRef = E674EC361BC82E37008EB392 /* WillMovieData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,10 +191,6 @@
 		B933DDA51BC6198B00505A8C /* ShowMovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMovieCell.h; sourceTree = "<group>"; };
 		B933DDA61BC6198B00505A8C /* ShowMovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMovieCell.m; sourceTree = "<group>"; };
 		B933DDA71BC6198B00505A8C /* ShowMovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowMovieCell.xib; sourceTree = "<group>"; };
-		B933DDA91BC6198B00505A8C /* TopMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMovieViewController.h; sourceTree = "<group>"; };
-		B933DDAA1BC6198B00505A8C /* TopMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMovieViewController.m; sourceTree = "<group>"; };
-		B933DDAC1BC6198B00505A8C /* WillMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WillMovieViewController.h; sourceTree = "<group>"; };
-		B933DDAD1BC6198B00505A8C /* WillMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WillMovieViewController.m; sourceTree = "<group>"; };
 		B985F0601BC355A700B1E2AF /* HY_XXT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HY_XXT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B985F0641BC355A700B1E2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B985F06B1BC355A700B1E2AF /* HY_XXT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HY_XXT.xcdatamodel; sourceTree = "<group>"; };
@@ -269,6 +268,16 @@
 		B9E270BF1BC3A049007372FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B9E270C11BC3A052007372FE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B9E270C31BC3A05B007372FE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E674EC141BC81A4D008EB392 /* ChartImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartImageView.h; sourceTree = "<group>"; };
+		E674EC151BC81A4D008EB392 /* ChartImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartImageView.m; sourceTree = "<group>"; };
+		E674EC271BC82CC8008EB392 /* TopMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMovieViewController.h; sourceTree = "<group>"; };
+		E674EC281BC82CC8008EB392 /* TopMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMovieViewController.m; sourceTree = "<group>"; };
+		E674EC2D1BC82CC8008EB392 /* WillMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WillMovieViewController.h; sourceTree = "<group>"; };
+		E674EC2E1BC82CC8008EB392 /* WillMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WillMovieViewController.m; sourceTree = "<group>"; };
+		E674EC331BC82E37008EB392 /* ReqWillMovieData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReqWillMovieData.h; sourceTree = "<group>"; };
+		E674EC341BC82E37008EB392 /* ReqWillMovieData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReqWillMovieData.m; sourceTree = "<group>"; };
+		E674EC351BC82E37008EB392 /* WillMovieData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WillMovieData.h; sourceTree = "<group>"; };
+		E674EC361BC82E37008EB392 /* WillMovieData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WillMovieData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -583,11 +592,11 @@
 		B933DD831BC6198B00505A8C /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				E674EC251BC82CC8008EB392 /* TopMovie */,
+				E674EC2B1BC82CC8008EB392 /* WillMovie */,
 				B933DD841BC6198B00505A8C /* Cinema */,
 				B933DD871BC6198B00505A8C /* MainMovie */,
 				B933DD9F1BC6198B00505A8C /* ShowMovie */,
-				B933DDA81BC6198B00505A8C /* TopMovie */,
-				B933DDAB1BC6198B00505A8C /* WillMovie */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -713,24 +722,6 @@
 				B933DDA71BC6198B00505A8C /* ShowMovieCell.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		B933DDA81BC6198B00505A8C /* TopMovie */ = {
-			isa = PBXGroup;
-			children = (
-				B933DDA91BC6198B00505A8C /* TopMovieViewController.h */,
-				B933DDAA1BC6198B00505A8C /* TopMovieViewController.m */,
-			);
-			path = TopMovie;
-			sourceTree = "<group>";
-		};
-		B933DDAB1BC6198B00505A8C /* WillMovie */ = {
-			isa = PBXGroup;
-			children = (
-				B933DDAC1BC6198B00505A8C /* WillMovieViewController.h */,
-				B933DDAD1BC6198B00505A8C /* WillMovieViewController.m */,
-			);
-			path = WillMovie;
 			sourceTree = "<group>";
 		};
 		B985F0571BC355A700B1E2AF = {
@@ -861,8 +852,80 @@
 			children = (
 				B994BE4F1BC7BD9200DD44A3 /* CinemaCell.h */,
 				B994BE501BC7BD9200DD44A3 /* CinemaCell.m */,
+				E674EC141BC81A4D008EB392 /* ChartImageView.h */,
+				E674EC151BC81A4D008EB392 /* ChartImageView.m */,
 				B994BE541BC7F00200DD44A3 /* TitleLabel.h */,
 				B994BE551BC7F00200DD44A3 /* TitleLabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E674EC251BC82CC8008EB392 /* TopMovie */ = {
+			isa = PBXGroup;
+			children = (
+				E674EC261BC82CC8008EB392 /* Controller */,
+				E674EC291BC82CC8008EB392 /* Model */,
+				E674EC2A1BC82CC8008EB392 /* View */,
+			);
+			path = TopMovie;
+			sourceTree = "<group>";
+		};
+		E674EC261BC82CC8008EB392 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E674EC271BC82CC8008EB392 /* TopMovieViewController.h */,
+				E674EC281BC82CC8008EB392 /* TopMovieViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E674EC291BC82CC8008EB392 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E674EC2A1BC82CC8008EB392 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E674EC2B1BC82CC8008EB392 /* WillMovie */ = {
+			isa = PBXGroup;
+			children = (
+				E674EC2C1BC82CC8008EB392 /* Controller */,
+				E674EC2F1BC82CC8008EB392 /* Model */,
+				E674EC301BC82CC8008EB392 /* View */,
+			);
+			path = WillMovie;
+			sourceTree = "<group>";
+		};
+		E674EC2C1BC82CC8008EB392 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E674EC2D1BC82CC8008EB392 /* WillMovieViewController.h */,
+				E674EC2E1BC82CC8008EB392 /* WillMovieViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E674EC2F1BC82CC8008EB392 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E674EC331BC82E37008EB392 /* ReqWillMovieData.h */,
+				E674EC341BC82E37008EB392 /* ReqWillMovieData.m */,
+				E674EC351BC82E37008EB392 /* WillMovieData.h */,
+				E674EC361BC82E37008EB392 /* WillMovieData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E674EC301BC82CC8008EB392 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -985,8 +1048,8 @@
 				B933DDC51BC6198B00505A8C /* AFURLConnectionOperation.m in Sources */,
 				B99F18F01BC69ACC00A38F5E /* ReqShowMoiveData.m in Sources */,
 				B933DDC01BC6198B00505A8C /* AFHTTPRequestOperation.m in Sources */,
+				E674EC321BC82CC8008EB392 /* WillMovieViewController.m in Sources */,
 				B933DDD01BC6198B00505A8C /* HYTabBarButton.m in Sources */,
-				B933DDDF1BC6198B00505A8C /* WillMovieViewController.m in Sources */,
 				B933DDDC1BC6198B00505A8C /* ShowMovieCell.m in Sources */,
 				B99F18EA1BC61BA200A38F5E /* DropAreaData.m in Sources */,
 				B933DDD21BC6198B00505A8C /* MoviesViewController.m in Sources */,
@@ -1010,6 +1073,7 @@
 				B994BE231BC75CBB00DD44A3 /* SDImageCache.m in Sources */,
 				B99F18E71BC61B5900A38F5E /* DropCityData.m in Sources */,
 				B994BE451BC7BB8400DD44A3 /* CinemaController.m in Sources */,
+				E674EC311BC82CC8008EB392 /* TopMovieViewController.m in Sources */,
 				B994BE291BC75CBB00DD44A3 /* SDWebImagePrefetcher.m in Sources */,
 				B994BE2E1BC75CBB00DD44A3 /* UIImageView+HighlightedWebCache.m in Sources */,
 				B933DDC71BC6198B00505A8C /* AFURLResponseSerialization.m in Sources */,
@@ -1030,11 +1094,12 @@
 				B994BE4B1BC7BBB200DD44A3 /* CinemaData.m in Sources */,
 				B933DDDA1BC6198B00505A8C /* SlideView.m in Sources */,
 				B933DDD51BC6198B00505A8C /* DropActionButton.m in Sources */,
-				B933DDDE1BC6198B00505A8C /* TopMovieViewController.m in Sources */,
 				B933DDD71BC6198B00505A8C /* DropButton.m in Sources */,
 				B933DDC11BC6198B00505A8C /* AFHTTPRequestOperationManager.m in Sources */,
+				E674EC371BC82E37008EB392 /* ReqWillMovieData.m in Sources */,
 				B933DDD81BC6198B00505A8C /* DropDownMenuView.m in Sources */,
 				B933DDD61BC6198B00505A8C /* DropActionView.m in Sources */,
+				E674EC161BC81A4D008EB392 /* ChartImageView.m in Sources */,
 				B994BE271BC75CBB00DD44A3 /* SDWebImageDownloaderOperation.m in Sources */,
 				B994BE521BC7BD9200DD44A3 /* CinemaCell.m in Sources */,
 				B933DDCE1BC6198B00505A8C /* RootViewController.m in Sources */,
@@ -1045,6 +1110,7 @@
 				B933DDDB1BC6198B00505A8C /* ShowmoiveTableViewController.m in Sources */,
 				B933DDAF1BC6198B00505A8C /* CalenderController.m in Sources */,
 				B933DDBE1BC6198B00505A8C /* AFNReuest.m in Sources */,
+				E674EC381BC82E37008EB392 /* WillMovieData.m in Sources */,
 				B933DDC91BC6198B00505A8C /* FinderController.m in Sources */,
 				B994BE301BC75CBB00DD44A3 /* UIView+WebCacheOperation.m in Sources */,
 				B933DDC21BC6198B00505A8C /* AFHTTPSessionManager.m in Sources */,
@@ -1175,7 +1241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "/Users/lanou3g/Documents/XXT_IOS/项目/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/wangxinguo/Desktop/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Applications/Xcode6.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk//usr/include/libxml2",
@@ -1193,7 +1259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "/Users/lanou3g/Documents/XXT_IOS/项目/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/wangxinguo/Desktop/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Applications/Xcode6.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk//usr/include/libxml2",

@@ -61,10 +61,9 @@
     {
         cell = [[CinemaCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identfier];
     }
-    NSLog(@"%@",self.cinemasArr[indexPath.row]);
-    cell.backgroundColor =[UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1.0];  
+//    NSLog(@"%@",self.cinemasArr[indexPath.row]);
+    cell.backgroundColor =[UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1.0];
     cell.cinemadata =self.cinemasArr[indexPath.row];
-    NSLog(@"%@",cell.cinemadata);
     return cell;
 }
 

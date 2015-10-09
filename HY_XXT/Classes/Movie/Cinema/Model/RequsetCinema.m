@@ -92,7 +92,14 @@
     }else if ([elementName isEqualToString:@"characteristic"]){
         self.showCinema.characteristic =self.contentStr;
     }else if ([elementName isEqualToString:@"characteristicIcon"]){
-        self.showCinema.characteristicIcon =[StrForDic dictionaryWithJsonString:self.contentStr];
+        NSArray *arr =[StrForDic dictionaryWithJsonString:self.contentStr];
+        NSMutableArray *dataarr =[NSMutableArray array];
+        for (NSDictionary *dic in arr) {
+            DesceiphionData *data =[DesceiphionData new];
+            [data setValuesForKeysWithDictionary:dic];
+            [dataarr addObject:data];
+        }
+        self.showCinema.characteristicIcon =[[NSArray alloc]initWithArray:dataarr];
     }else if ([elementName isEqualToString:@"cinema"]){
         [self.allArr addObject:self.showCinema];
     }
