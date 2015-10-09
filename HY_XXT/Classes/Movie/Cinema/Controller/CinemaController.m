@@ -7,10 +7,10 @@
 //
 
 #import "CinemaController.h"
-
-
+#import "CinemaCell.h"
+#import "RequsetCinema.h"
 @interface CinemaController ()
-
+@property (nonatomic,strong)NSMutableArray *cinemasArr;
 @end
 
 @implementation CinemaController
@@ -18,13 +18,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tongzhi:) name:@"Cinemanot" object:nil];
-
+    [self reqData];
 }
 //接收通知
 - (void)tongzhi:(NSNotification *)text{
 
     NSLog(@"%@",text.userInfo[@"CinemaStyle"]);
 }
+
+-(void)reqData{
+    RequsetCinema *cinemaReq =[[RequsetCinema alloc]init:@"购票-影院"];
+    self.cinemasArr =[NSMutableArray arrayWithArray:cinemaReq.allArr];
+    [self.tableView reloadData];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -42,16 +50,28 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return 20;
+
+    return self.cinemasArr.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
-    
-    cell.textLabel.text =@"影院";
-    
+- (CinemaCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *identfier = @"影院";
+    CinemaCell *cell = [tableView dequeueReusableCellWithIdentifier:identfier];
+    if (cell == nil)
+    {
+        cell = [[CinemaCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identfier];
+    }
+    NSLog(@"%@",self.cinemasArr[indexPath.row]);
+    cell.backgroundColor =[UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1.0];  
+    cell.cinemadata =self.cinemasArr[indexPath.row];
+    NSLog(@"%@",cell.cinemadata);
     return cell;
 }
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 135;
+}
+
 
 /*
 // Override to support conditional editing of the table view.

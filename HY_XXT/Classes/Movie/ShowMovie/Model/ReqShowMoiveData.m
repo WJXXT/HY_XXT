@@ -7,43 +7,89 @@
 //
 
 #import "ReqShowMoiveData.h"
+#import "ShowMoiveData.h"
+#import "StrForDic.h"
+@interface ReqShowMoiveData ()<NSXMLParserDelegate>
+@property (nonatomic,copy)NSString *contentStr;//记录读取内容
+@property (nonatomic,assign)BOOL isread;
+@property (nonatomic,strong)ShowMoiveData *showMovie;
 
+@end
 @implementation ReqShowMoiveData
-+(NSArray *)reaqustFile:(NSString *)fileName {
-    //创建字典 承装解析后的数据
-    //    1.获取文件路径
-    NSString *filePath =[[NSBundle mainBundle]pathForResource:fileName ofType:@"xml"];
-    //    2.读取文件内容
-    NSString *parseStr =[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
-    //    3.将需要解析的内容读入document
-    GDataXMLDocument *document =[[GDataXMLDocument alloc]initWithXMLString:parseStr options:0 error:nil];
-    //    4.获取根节点
-    GDataXMLElement *rootElement =[document rootElement];
-    ////    获取子节点
-        NSArray *elments = [rootElement elementsForName:@"movieList"];
-//    NSArray *arr=[elments valueForKey:@"movieList"];
-//        GDataXMLElement *status = [elments firstObject];
-//     NSString *arr=[status valueForKey:@"movie"];
-    //    NSString *statusValue =[status stringValue];
-    //    NSLog(@"%@",statusValue);
-//    NSArray *elements =[rootElement elementsForName:@"categories"];
-//    for (GDataXMLElement *element in elements) {
-//        //获取下一级的子节点们
-//        NSArray *names =[element elementsForName:@"category_name"];
-//        NSArray *subcategories = [element elementsForName:@"subcategories"];
-//        //        获取叶子节点的值
-//        NSString *categoryName = [[names firstObject] stringValue];
-//        //        创建对应分组
-//        NSMutableArray *group = [NSMutableArray array];
-//        //        将分组放入字典
-//        [_categoryDic setValue:group forKey:categoryName];
-//        for (GDataXMLElement *element in subcategories) {
-//            //获取叶子节点的值
-//            NSString *subStr = [element stringValue];
-//            NSLog(@"%@",subStr);
-//            [group addObject:subStr];
-//        }
-//    }
-    return elments;
+-(id)init:(NSString *)filestr{
+    self =[super init];
+    if (self) {
+        [self quyuData:filestr];
+    }
+    return self;
+}
+
+-(void)quyuData:(NSString *)name{
+    NSString *filePath = [[NSBundle mainBundle]pathForResource:name ofType:@"xml"];
+    self.allArr=[NSMutableArray array];
+    self.isread =NO;
+    //读取文件内容
+    NSData *parseData = [NSData dataWithContentsOfFile:filePath];
+    //创建解析对象
+    NSXMLParser *parser = [[NSXMLParser alloc]initWithData:parseData];
+    //设置代理
+    parser.delegate = self;
+    //解析
+    [parser parse];
+}
+#pragma mark - SAX解析
+//读取到开始标签
+-(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
+    if ([elementName isEqualToString:@"movie"]) {
+        self.showMovie =[ShowMoiveData new];
+    }
+}
+//获取内容
+-(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
+
+    self.contentStr =string;
+    self.isread =YES;
+}
+//读取到结束标签
+-(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
+    if (self.isread ==NO) {
+        self.contentStr =@"";
+    }
+    if ([elementName isEqualToString:@"moviename"]) {
+        self.showMovie.moviename =self.contentStr;
+    }else if ([elementName isEqualToString:@"releasedate"]){
+        self.showMovie.releasedate =self.contentStr;
+    }else if ([elementName isEqualToString:@"highlight"]){
+        self.showMovie.highlight =self.contentStr;
+    }else if ([elementName isEqualToString:@"countdes"]){
+        self.showMovie.countdes =self.contentStr;
+    }else if ([elementName isEqualToString:@"hlogo"]){
+        self.showMovie.hlogo =self.contentStr;
+    }else if ([elementName isEqualToString:@"icon"]){
+        self.showMovie.icon =[StrForDic dictionaryWithJsonString:self.contentStr];
+    }else if ([elementName isEqualToString:@"actors"]){
+        self.showMovie.actors =self.contentStr;
+    }else if ([elementName isEqualToString:@"englishname"]){
+        self.showMovie.englishname =self.contentStr;
+    }else if ([elementName isEqualToString:@"logo"]){
+        self.showMovie.logo =self.contentStr;
+    }else if ([elementName isEqualToString:@"gcedition"]){
+        self.showMovie.gcedition =self.contentStr;
+    }else if ([elementName isEqualToString:@"label"]){
+        self.showMovie.label =self.contentStr;
+    }else if ([elementName isEqualToString:@"director"]){
+        self.showMovie.director =self.contentStr;
+    }else if ([elementName isEqualToString:@"presell"]){
+        self.showMovie.presell =self.contentStr;
+    }else if ([elementName isEqualToString:@"generalmark"]){
+        self.showMovie.generalmark =self.contentStr;
+    }else if ([elementName isEqualToString:@"minprice"]){
+        self.showMovie.minprice =self.contentStr;
+    }else if ([elementName isEqualToString:@"language"]){
+        self.showMovie.language =self.contentStr;
+    }else if ([elementName isEqualToString:@"movie"]){
+        [self.allArr addObject:self.showMovie];
+    }
+    self.isread =NO;
 }
 @end

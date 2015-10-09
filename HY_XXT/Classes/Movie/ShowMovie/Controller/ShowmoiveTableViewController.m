@@ -10,10 +10,13 @@
 #import "AFNReuest.h"
 #import "MoviesData.h"
 #import "ReqShowMoiveData.h"
-
+#import "ShowMovieCell.h"
+#import "ShowMoiveData.h"
+#import "UIImageView+WebCache.h"
 @interface ShowmoiveTableViewController ()
 
-//@property (nonatomic,strong)NSMutableArray *movies;
+@property (nonatomic,strong)NSMutableArray *moviesarr;
+
 @end
 
 @implementation ShowmoiveTableViewController
@@ -24,25 +27,16 @@
 //}
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-//    [self layoutCityData];
-    NSLog(@"%@",[ReqShowMoiveData reaqustFile:@"购票-热映"]);
+    [self.tableView registerNib:[UINib nibWithNibName:@"ShowMovieCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"movieIdentifier"];
+    [self reqData];
 }
 
-//-(void)layoutCityData{
-//    NSString *str =[NSString stringWithFormat:@"%@/v1/cinemas.json?ct=beijing",kMaoYanURL];
-//    [AFNReuest JSONDataWithUrl:str success:^(id json) {
-//        NSArray *arr =[json valueForKey:@"data"];
-//        self.movies =[NSMutableArray array];
-//        for (NSDictionary *dic in arr) {
-//            MoviesData *data =[MoviesData new];
-//            [data setValuesForKeysWithDictionary:dic];
-//            [self.movies addObject:data];
-//        }
-//    } fail:^{
-//        NSLog(@"数据请求错误");
-//    }];
-//}
+-(void)reqData{
+    ReqShowMoiveData *movieReq =[[ReqShowMoiveData alloc]init:@"购票-热映"];
+    self.moviesarr =[NSMutableArray arrayWithArray:movieReq.allArr];
+    [self.tableView reloadData];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -52,24 +46,49 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
-    return 20;
+
+    return self.moviesarr.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    ShowMovieCell *cell = [tableView dequeueReusableCellWithIdentifier:@"movieIdentifier" forIndexPath:indexPath];
+    ShowMoiveData *data =self.moviesarr[indexPath.row];
     
-    cell.textLabel.text =@"上映电影";
-    
+    CGFloat x=cell.moviename.frame.origin.x;
+    CGFloat y=cell.moviename.frame.origin.y;
+    CGSize labelsize = [data.moviename sizeWithAttributes:@{NSFontAttributeName:cell.moviename.font}];
+    CGFloat wightafter = 140;
+    if (labelsize.width < 140) {
+        [cell.moviename setFrame:CGRectMake(x,y, labelsize.width, labelsize.height)];
+        wightafter =labelsize.width;
+    }
+    cell.moviename.text =data.moviename;
+
+    [cell.imageLogo sd_setImageWithURL:[NSURL URLWithString:data.logo]];
+    if (![data.highlight isEqualToString:@""]) {
+        cell.moviemeg.text =data.highlight;
+    }else{
+        NSString *director =[NSString stringWithFormat:@"导演:%@\n演员:%@",data.director,data.actors];
+        cell.moviemeg.text =director;
+    }
+    cell.backgroundColor =[UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1.0];
+    NSDictionary *dic =data.icon[0];
+    CGFloat wight =[[dic valueForKey:@"imgWight"] floatValue];
+    CGFloat height =[[dic valueForKey:@"imgHeight"] floatValue];
+    cell.icon.frame =CGRectMake(x +wightafter+10,y+3,wight/2,height/2);
+    [cell.icon sd_setImageWithURL:[NSURL URLWithString:[dic valueForKey:@"imgIcon"]]];
+    cell.countdes.text =data.countdes;
+    cell.generalmark.text =data.generalmark;
     return cell;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 135;
+}
 
 /*
 // Override to support conditional editing of the table view.

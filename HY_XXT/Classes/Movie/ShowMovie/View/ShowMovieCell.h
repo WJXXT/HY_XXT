@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface ShowMovieCell : UITableViewCell
-
+@property (weak, nonatomic) IBOutlet UIImageView *imageLogo;
+@property (weak, nonatomic) IBOutlet UILabel *moviename;
+@property (weak, nonatomic) IBOutlet UILabel *moviemeg;
+@property (weak, nonatomic) IBOutlet UILabel *countdes;
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
+@property (weak, nonatomic) IBOutlet UILabel *generalmark;
 @end
