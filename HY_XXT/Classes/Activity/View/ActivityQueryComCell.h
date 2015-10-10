@@ -1,5 +1,5 @@
 //
-//  FinderController.h
+//  ActivityQueryComCell.h
 //  HY_XXT
 //
 //  Created by XXT on 15/10/10.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FinderController : UITableViewController
+@interface ActivityQueryComCell : UITableViewCell
 
 @end

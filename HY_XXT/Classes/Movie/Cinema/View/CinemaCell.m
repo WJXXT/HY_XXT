@@ -50,7 +50,6 @@
     }
     return self;
 }
-//
 -(void)setCinemadata:(CinemaData *)cinemadata{
     if (_cinemadata!= cinemadata)
     {

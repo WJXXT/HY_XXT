@@ -1,13 +1,13 @@
 //
-//  FinderController.h
+//  QueryCommend.m
 //  HY_XXT
 //
 //  Created by XXT on 15/10/10.
 //  Copyright (c) 2015年 XXT. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "QueryCommend.h"
 
-@interface FinderController : UITableViewController
+@implementation QueryCommend
 
 @end

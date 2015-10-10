@@ -74,7 +74,9 @@
     [self addChildViewController:moviena];
     
     _activity =[[ActivityController alloc]init];
-    [self addChildViewController:_activity];
+    UINavigationController *activityna =[[UINavigationController alloc]initWithRootViewController:_activity];
+
+    [self addChildViewController:activityna];
 
     _calender =[[CalenderController alloc]init];
     [self addChildViewController:_calender];

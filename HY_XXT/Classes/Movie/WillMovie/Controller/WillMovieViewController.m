@@ -46,8 +46,6 @@
     return movie.count;
 }
 
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ShowMovieCell *cell = [tableView dequeueReusableCellWithIdentifier:@"movieIdentifier" forIndexPath:indexPath];
     NSArray *movie =self.moviesarr[indexPath.section];
@@ -76,7 +74,7 @@
     CGFloat height =[[dic valueForKey:@"imgHeight"] floatValue];
     cell.icon.frame =CGRectMake(x +wightafter+10,y+3,wight/2,height/2);
     [cell.icon sd_setImageWithURL:[NSURL URLWithString:[dic valueForKey:@"imgIcon"]]];
-    cell.countdes.text =data.countdes;
+    cell.countdes.text =data.releasedateDescForList;
     NSString *str =[NSString stringWithFormat:@"%@人想看",data.xiangkan];
     cell.generalmark.font =[UIFont fontWithName:@"Helvetica-Bold" size:18];
     CGSize xiangkansize = [str sizeWithAttributes:@{NSFontAttributeName:cell.generalmark.font}];
@@ -88,7 +86,13 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 135;
 }
-
+//设置分区 title
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    if (section == 0) {
+        return @"最受关注";
+    }
+    return @"即将上映";
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

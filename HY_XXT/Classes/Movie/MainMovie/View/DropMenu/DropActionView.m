@@ -133,7 +133,7 @@
     }];
     self.selectBt.selected = NO;
     self.selectBt =nil;
-    [self.bakview removeGestureRecognizer:tap];
+//    [self.bakview removeGestureRecognizer:tap];
 }
 
 
