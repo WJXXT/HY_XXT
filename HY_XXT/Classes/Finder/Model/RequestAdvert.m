@@ -103,9 +103,9 @@
     }else if ([elementName isEqualToString:@"relatedid"]){
         self.advert.relatedid =self.contentStr;
     }else if ([elementName isEqualToString:@"advertisingList"]){
-        [self.allArr addObject:self.advertising];
+        [self.allArr addObject:self.advertisingList];
     }else if ([elementName isEqualToString:@"advertList"]){
-        [self.allArr addObject:self.advert];
+        [self.allArr addObject:self.advertList];
     }else if ([elementName isEqualToString:@"advertising"]){
         [self.advertisingList addObject:self.advertising];
     }else if ([elementName isEqualToString:@"advert"]){

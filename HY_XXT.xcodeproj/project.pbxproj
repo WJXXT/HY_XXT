@@ -79,7 +79,6 @@
 		B969D6781BC90DDE005577FA /* ActivityComment.m in Sources */ = {isa = PBXBuildFile; fileRef = B969D6771BC90DDE005577FA /* ActivityComment.m */; };
 		B969D67B1BC90DF7005577FA /* RequstComment.m in Sources */ = {isa = PBXBuildFile; fileRef = B969D67A1BC90DF7005577FA /* RequstComment.m */; };
 		B969D67D1BC90FAE005577FA /* 活动列表1.xml in Resources */ = {isa = PBXBuildFile; fileRef = B969D67C1BC90FAE005577FA /* 活动列表1.xml */; };
-		B969D6801BC92A62005577FA /* FinderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B969D67F1BC92A62005577FA /* FinderController.m */; };
 		B969D6861BC92FB0005577FA /* AdvertisingData.m in Sources */ = {isa = PBXBuildFile; fileRef = B969D6851BC92FB0005577FA /* AdvertisingData.m */; };
 		B969D6891BC92FC0005577FA /* AdvertData.m in Sources */ = {isa = PBXBuildFile; fileRef = B969D6881BC92FC0005577FA /* AdvertData.m */; };
 		B969D68C1BC92FD5005577FA /* RequestAdvert.m in Sources */ = {isa = PBXBuildFile; fileRef = B969D68B1BC92FD5005577FA /* RequestAdvert.m */; };
@@ -128,6 +127,8 @@
 		E674EC321BC82CC8008EB392 /* WillMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E674EC2E1BC82CC8008EB392 /* WillMovieViewController.m */; };
 		E674EC371BC82E37008EB392 /* ReqWillMovieData.m in Sources */ = {isa = PBXBuildFile; fileRef = E674EC341BC82E37008EB392 /* ReqWillMovieData.m */; };
 		E674EC381BC82E37008EB392 /* WillMovieData.m in Sources */ = {isa = PBXBuildFile; fileRef = E674EC361BC82E37008EB392 /* WillMovieData.m */; };
+		E6B7C5A91BCA064600C6C828 /* FinderController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B7C5A81BCA064600C6C828 /* FinderController.m */; };
+		E6DFB8E11BC9722B00C4A235 /* TurnView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DFB8E01BC9722B00C4A235 /* TurnView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,7 +255,6 @@
 		B969D67A1BC90DF7005577FA /* RequstComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequstComment.m; sourceTree = "<group>"; };
 		B969D67C1BC90FAE005577FA /* 活动列表1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "活动列表1.xml"; sourceTree = "<group>"; };
 		B969D67E1BC92A62005577FA /* FinderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinderController.h; sourceTree = "<group>"; };
-		B969D67F1BC92A62005577FA /* FinderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinderController.m; sourceTree = "<group>"; };
 		B969D6841BC92FB0005577FA /* AdvertisingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertisingData.h; sourceTree = "<group>"; };
 		B969D6851BC92FB0005577FA /* AdvertisingData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisingData.m; sourceTree = "<group>"; };
 		B969D6871BC92FC0005577FA /* AdvertData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertData.h; sourceTree = "<group>"; };
@@ -348,6 +348,9 @@
 		E674EC341BC82E37008EB392 /* ReqWillMovieData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReqWillMovieData.m; sourceTree = "<group>"; };
 		E674EC351BC82E37008EB392 /* WillMovieData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WillMovieData.h; sourceTree = "<group>"; };
 		E674EC361BC82E37008EB392 /* WillMovieData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WillMovieData.m; sourceTree = "<group>"; };
+		E6B7C5A81BCA064600C6C828 /* FinderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinderController.m; sourceTree = "<group>"; };
+		E6DFB8DF1BC9722B00C4A235 /* TurnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurnView.h; sourceTree = "<group>"; };
+		E6DFB8E01BC9722B00C4A235 /* TurnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurnView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,7 +558,7 @@
 			isa = PBXGroup;
 			children = (
 				B969D67E1BC92A62005577FA /* FinderController.h */,
-				B969D67F1BC92A62005577FA /* FinderController.m */,
+				E6B7C5A81BCA064600C6C828 /* FinderController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -576,6 +579,8 @@
 		B933DD6B1BC6198B00505A8C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E6DFB8DF1BC9722B00C4A235 /* TurnView.h */,
+				E6DFB8E01BC9722B00C4A235 /* TurnView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1174,7 +1179,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B933DDC51BC6198B00505A8C /* AFURLConnectionOperation.m in Sources */,
-				B969D6801BC92A62005577FA /* FinderController.m in Sources */,
 				B99F18F01BC69ACC00A38F5E /* ReqShowMoiveData.m in Sources */,
 				B933DDC01BC6198B00505A8C /* AFHTTPRequestOperation.m in Sources */,
 				E674EC321BC82CC8008EB392 /* WillMovieViewController.m in Sources */,
@@ -1229,6 +1233,7 @@
 				B994BE2C1BC75CBB00DD44A3 /* UIImage+MultiFormat.m in Sources */,
 				B994BE2B1BC75CBB00DD44A3 /* UIImage+GIF.m in Sources */,
 				B994BE4B1BC7BBB200DD44A3 /* CinemaData.m in Sources */,
+				E6B7C5A91BCA064600C6C828 /* FinderController.m in Sources */,
 				B933DDDA1BC6198B00505A8C /* SlideView.m in Sources */,
 				B933DDD51BC6198B00505A8C /* DropActionButton.m in Sources */,
 				B933DDD71BC6198B00505A8C /* DropButton.m in Sources */,
@@ -1236,6 +1241,7 @@
 				B969D6861BC92FB0005577FA /* AdvertisingData.m in Sources */,
 				E674EC371BC82E37008EB392 /* ReqWillMovieData.m in Sources */,
 				B933DDD81BC6198B00505A8C /* DropDownMenuView.m in Sources */,
+				E6DFB8E11BC9722B00C4A235 /* TurnView.m in Sources */,
 				B933DDD61BC6198B00505A8C /* DropActionView.m in Sources */,
 				E674EC161BC81A4D008EB392 /* ChartImageView.m in Sources */,
 				B969D6721BC8D2CB005577FA /* ActivityQueryComCell.m in Sources */,
@@ -1381,7 +1387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "/Users/lanou3g/Documents/XXT_IOS/项目/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/wangxinguo/Desktop/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Applications/Xcode6.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk//usr/include/libxml2",
@@ -1399,7 +1405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "/Users/lanou3g/Documents/XXT_IOS/项目/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/wangxinguo/Desktop/HY_XXT/HY_XXT/Classes/HYPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Applications/Xcode6.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk//usr/include/libxml2",

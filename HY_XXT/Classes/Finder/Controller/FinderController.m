@@ -9,13 +9,21 @@
 #import "FinderController.h"
 #import "AFNReuest.h"
 #import "CityController.h"
+#import "RequestAdvert.h"
+#import "AdvertisingData.h"
+#import "TurnView.h"
 @interface FinderController ()
 @property (nonatomic,assign)NSInteger citySelet;
+@property (nonatomic,strong)NSMutableArray *advertisingArr;
+@property (nonatomic,strong)TurnView *topView;
+@property (nonatomic,strong)NSTimer *timer;
+@property (nonatomic,assign)NSInteger turnImageCount;
 @end
 
 @implementation FinderController
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+//    [self.timer setFireDate:[NSDate distantFuture]];
         self.tableView.alpha =0;
         [self.tableView.layer removeAllAnimations];
         [UIView animateWithDuration:0.1 animations:^{
@@ -32,13 +40,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     _citySelet = 1;
+    [self resquestData];
+    [self turnImageView];
+
+
+}
+
+
+
+-(void)resquestData{
+    RequestAdvert *activityMainReq =[[RequestAdvert alloc]init:@"发现-活动"];
+    self.advertisingArr =[NSMutableArray arrayWithArray:activityMainReq.allArr][0];
     
+}
+-(void)turnImageView{
+    self.tableView.contentInset = UIEdgeInsetsMake(550 * 0.5, 0, 0, 0);
+    TurnView *topView =[[TurnView alloc]initWithFrame:CGRectMake(0, -350, kScreenWidth, 350) Data:self.advertisingArr];
+
+//    topView.frame = CGRectMake(0, -350, kScreenWidth, 350);
+    [self.tableView insertSubview:topView atIndex:0];
+    self.topView = topView;
+    [self.tableView reloadData];
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
+
     if (_citySelet == 1) {
         CityController *cityer =[[CityController alloc]init];
         UINavigationController *naVc= [[UINavigationController alloc]initWithRootViewController:cityer];
@@ -47,8 +74,47 @@
     }
     
 }
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+//    [self.timer setFireDate:[NSDate distantPast]];
+}
 
+#pragma mark - ScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    UIImageView *selectView =(UIImageView *)[self.topView viewWithTag:200+self.turnImageCount];
+    CGRect frame = selectView.frame;
+     CGRect turnframe = self.topView.frame;
+//    NSLog(@"%f",selectView.frame.origin.y);
+    // 向下拽了多少距离
+    CGFloat down = -(550 * 0.5) - scrollView.contentOffset.y;
+//        NSLog(@"%f",down);
+    if (down < 0) {
+        frame.origin.y =-down *0.5;
+    };
+    if (down >0) {
+        frame.size.height = 350 + down *2;
+        frame.origin.y = -down *1;
+        
+        turnframe.origin.y =-350 -down *1;
+        turnframe.size.height = 350 + down *2;
+    }
+    selectView.frame = frame;
+    self.topView.frame =turnframe;
+}
+// scrollView 开始拖动
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    
+//    [self.timer setFireDate:[NSDate distantPast]];
+}
 
+// scrollView 结束拖动
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+//    [self.timer setFireDate:[NSDate distantFuture]];
+    self.topView.contentOffset =CGPointMake(kScreenWidth/2+10, 0);
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -57,13 +123,11 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 20;
 }
